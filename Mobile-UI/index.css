@@ -71,4 +71,5 @@ html, body {
     display: flex;
     height: 20px;
     gap: 5px;
+    width: 75px;
   }

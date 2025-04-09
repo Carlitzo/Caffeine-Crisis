@@ -26,6 +26,8 @@ export function openAppFunction(iconElement, appDiv) {
         renderMap(appDiv);
     }
 
+    console.log(iconElement, appDiv)
+
     setTimeout(() => {
         appDiv.style.opacity = "100";
         appDiv.style.left = "0px";

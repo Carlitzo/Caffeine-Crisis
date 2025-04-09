@@ -24,7 +24,7 @@ export function renderMap(mapIcon) {
 
 function initLeafletMap() {
     // Skapa en Leaflet-karta
-    const map = L.map('map').setView([55.6077, 12.9960], 15); // Västra Hamnens koordinater
+    const map = L.map('map', { zoomControl: false}).setView([55.6077, 12.9960], 15); // Västra Hamnens koordinater
 
     // Lägg till OpenStreetMap baslager
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

@@ -21,6 +21,7 @@ html, body {
     margin: 10px 22px 0 22px;
     color: white;
     margin-top: 18px;
+    z-index: 1000;
   }
   
   #apps {

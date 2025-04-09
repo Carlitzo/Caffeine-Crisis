@@ -1,3 +1,3 @@
-export function renderMap() {
+export function renderMap(mapIcon) {
     
 }

@@ -1,5 +1,5 @@
 import { renderHomepage } from "./renderingFunctions/renderhomePage/renderHomepage.js";
-import { setEvents } from "./setEvents/setEvents.js";
+import { setAppEvents } from "./setAppEvents/setAppEvents.js";
 
 renderHomepage();
-setEvents();
+setAppEvents();

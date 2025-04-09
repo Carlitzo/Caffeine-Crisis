@@ -14,6 +14,11 @@ export function openAppFunction(iconElement, appDiv) {
 
     document.body.appendChild(appDiv);
 
+    if (appDiv.id === "notesDiv") {
+        let header = document.getElementById("topContainer");
+        header.style.color = "black";
+    }
+
     if (appDiv.id === "mapsApp") {
         renderMap(appDiv);
     }

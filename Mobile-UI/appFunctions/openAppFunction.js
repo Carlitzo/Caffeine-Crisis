@@ -1,8 +1,11 @@
 export function openAppFunction(iconElement, appDiv) {
+    
     const iconRect = iconElement.getBoundingClientRect();
 
     const relativeLeft = iconRect.left;
     const relativeTop = iconRect.top;
+
+    appDiv.style.opacity = "0";
 
     appDiv.classList.add("app_animation");
 
@@ -24,6 +27,7 @@ export function openAppFunction(iconElement, appDiv) {
     }
 
     setTimeout(() => {
+        appDiv.style.opacity = "100";
         appDiv.style.left = "0px";
         appDiv.style.top = "0px";
         appDiv.style.width = "100vw";

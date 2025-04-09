@@ -4,6 +4,7 @@ html, body {
   }
   
   body {
+    touch-action: none;
     background-image: url(images/work.jpg);
     background-position: center;
     background-repeat: no-repeat;

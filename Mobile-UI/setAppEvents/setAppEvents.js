@@ -13,9 +13,9 @@ export function setAppEvents() {
         renderNotes(notesIcon);
     })
 
-    instagramIcon.addEventListener("click", () => {
-        console.log("hej du tryckte på instagramikonen");
-    })
+    // instagramIcon.addEventListener("click", () => {
+    //     console.log("hej du tryckte på instagramikonen");
+    // })
     
     mapsIcon.addEventListener("click", () => {
         renderMap(mapsIcon);

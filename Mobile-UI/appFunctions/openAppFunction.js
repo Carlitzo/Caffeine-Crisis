@@ -1,9 +1,16 @@
 export function openAppFunction(iconElement, appDiv) {
     
     const iconRect = iconElement.getBoundingClientRect();
+    const header = document.getElementById("topContainer");
+    const signalIcon = document.getElementById("signalIcon");
+    const batteryIcon = document.getElementById("batteryIcon");
 
     const relativeLeft = iconRect.left;
     const relativeTop = iconRect.top;
+
+    header.style.color = "black";
+    signalIcon.src = "./icons/signal-black.png";
+    batteryIcon.src = "./icons/battery-black.png";
 
     appDiv.style.opacity = "0";
 
@@ -26,14 +33,12 @@ export function openAppFunction(iconElement, appDiv) {
         renderMap(appDiv);
     }
 
-    console.log(iconElement, appDiv)
-
     setTimeout(() => {
         appDiv.style.opacity = "100";
         appDiv.style.left = "0px";
         appDiv.style.top = "0px";
         appDiv.style.width = "100vw";
         appDiv.style.height = "100vh";
-    }, 20);
+    }, 5);
 
 }

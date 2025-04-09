@@ -1,5 +1,8 @@
 export function closeAppFunction(appDiv, iconElement) {
     const iconRect = iconElement.getBoundingClientRect();
+    const header = document.getElementById("topContainer");
+    const signalIcon = document.getElementById("signalIcon");
+    const batteryIcon = document.getElementById("batteryIcon");
 
     const relativeLeft = iconRect.left;
     const relativeTop = iconRect.top;
@@ -9,10 +12,9 @@ export function closeAppFunction(appDiv, iconElement) {
     appDiv.style.width = `${iconRect.width}px`;
     appDiv.style.height = `${iconRect.height}px`;
 
-    if (appDiv.id === "notesDiv") {
-        let header = document.getElementById("topContainer");
-        header.style.color = "white";
-    }
+    header.style.color = "white";
+    signalIcon.src = "./icons/signal-white.png";
+    batteryIcon.src = "./icons/battery-white.png";
     
     setTimeout(() => {
         appDiv.remove();

@@ -29,7 +29,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    margin: 65px 20px;
+    margin: 70px 20px;
     place-items: center;
   }
   
@@ -78,8 +78,8 @@ html, body {
   }
 
   .appText {
-    margin: 2px;
-    font-size: 14px;
+    margin: 4px;
+    font-size: 11px;
     color: white;
   }
 

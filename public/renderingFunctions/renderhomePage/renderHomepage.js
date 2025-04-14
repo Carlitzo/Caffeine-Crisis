@@ -15,33 +15,43 @@ export function renderHomepage() {
             </div>
             <div class="appCard">
                 <img src="icons/calender.svg" id="calenderIcon" alt="" class="appIcon">
+                <p class="appText">Kalender</p>
             </div>
             <div class="appCard">
                 <img src="icons/mail.svg" id="mailIcon" alt="" class="appIcon">
+                <p class="appText">Mail</p>
             </div>
             <div class="appCard">
                 <img src="icons/clock.svg" id="clockIcon" class="appIcon">
+                <p class="appText">Klocka</p>
             </div>
             <div class="appCard">
                 <img src="icons/photo-album.svg" id="photoAlbumIcon" alt="" class="appIcon">
+                <p class="appText">Bilder</p>
             </div>
             <div class="appCard">
                 <img src="icons/camera.svg" id="cameraIcon" alt="" class="appIcon">
+                <p class="appText">Kamera</p>
             </div>
             <div class="appCard">
                 <img src="icons/notes.svg" id="notesIcon" alt="" class="appIcon">
+                <p class="appText">Anteckningar</p>
             </div>
             <div class="appCard">
                 <img src="icons/weather.svg" id="weatherIcon" alt="" class="appIcon">
+                <p class="appText">Väder</p>
             </div>
             <div class="appCard">
                 <img src="icons/app-store.svg" id="appStoreIcon" alt="" class="appIcon">
+                <p class="appText">App Store</p>
             </div>
             <div class="appCard">
                 <img src="icons/settings.svg" id="settingsIcon" alt="" class="appIcon">
+                <p class="appText">Settings</p>
             </div>
             <div class="appCard">
                 <img src="icons/instagram.svg" id="instgramIcon" alt="" class="appIcon">
+                <p class="appText">Instagram</p>
             </div>
         </main>
         <footer id="bottomContainer">

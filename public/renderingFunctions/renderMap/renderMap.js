@@ -34,49 +34,49 @@ function initLeafletMap() {
     // Exempel på hur du kan lägga till en anpassad markör
     const fyrIcon = L.icon({
         iconUrl: './images/kartikoner/Fyren.png', // Ersätt med din egen markörbild
-        iconSize: [42, 42],  // Storleken på markören
+        iconSize: [70, 70],  // Storleken på markören
         iconAnchor: [16, 32], // Där markören fästs på kartan
         popupAnchor: [0, -32] // Var popupen ska öppnas relativt markören
     });
     
     const varvsparkenIcon = L.icon({
         iconUrl: './images/kartikoner/Varvsparken.png',
-        iconSize: [42, 42],
+        iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
 
     const agilitybananIcon = L.icon({
         iconUrl: './images/kartikoner/Tratt.png',
-        iconSize: [42, 42],
+        iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
 
     const icaMaxiIcon = L.icon({
         iconUrl: './images/kartikoner/Kaffematt.png',
-        iconSize: [42, 42],
+        iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
 
     const orkanenIcon = L.icon({
         iconUrl: './images/kartikoner/Orkanen.png',
-        iconSize: [42, 42],
+        iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
     
     const safeSpaceIcon = L.icon({
         iconUrl: './images/kartikoner/Safespace.png',
-        iconSize: [42, 42],
+        iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
 
     const niagaraIcon = L.icon({
         iconUrl: './images/kartikoner/Niagara.png',
-        iconSize: [42, 42],
+        iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });

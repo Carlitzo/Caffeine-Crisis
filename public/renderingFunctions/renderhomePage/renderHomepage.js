@@ -9,7 +9,7 @@ export function renderHomepage() {
         </header>
         <main id="apps">
             <div class="appCard">
-                <img src="icons/facetime.svg" id="phoneIcon" alt="" class="appIcon">
+                <img src="icons/facetime.svg" alt="" class="appIcon">
                 <p class="appText">Telefon</p>
             </div>
             </div>
@@ -56,7 +56,7 @@ export function renderHomepage() {
         </main>
         <footer id="bottomContainer">
             <div class="appCard">
-                <img src="icons/phone.svg" alt="" class="appIcon">
+                <img src="icons/phone.svg" id="phoneIcon" alt="" class="appIcon">
             </div>
             <div class="appCard">
                 <img src="icons/safari.svg" alt="" class="appIcon">

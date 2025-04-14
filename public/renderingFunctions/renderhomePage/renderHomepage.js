@@ -4,7 +4,7 @@ export function renderHomepage() {
             <div id="timeIcon">12:14</div>
             <div id="iconContainer">
                 <img src="icons/signal-white.png" id="signalIcon" alt="">5G
-                <img src="icons/battery-white.png" id="" alt="batteryIcon" class="icon" class="battery">
+                <img src="icons/battery-white.png" id="batteryIcon" alt="batteryIcon" class="icon" class="battery">
             </div>
         </header>
         <main id="apps">
@@ -55,7 +55,7 @@ export function renderHomepage() {
                 <img src="icons/messages.svg" alt="" class="appIcon">
             </div>
             <div class="appCard">
-                <img src="icons/maps.svg" alt="" class="appIcon">
+                <img src="icons/maps.svg" id="mapsIcon" alt="" class="appIcon">
             </div>
         </footer>
     `

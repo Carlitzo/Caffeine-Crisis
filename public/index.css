@@ -1,86 +1,86 @@
 html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    touch-action: none;
-    background-image: url(images/work.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column; 
-    min-height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Arial, sans-serif;
-    backdrop-filter: blur(10px);
-  }
-  
-  #topContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 22px 0 22px;
-    color: white;
-    margin-top: 18px;
-    z-index: 10000;
-  }
-  
-  #apps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin: 70px 20px;
-    place-items: center;
-  }
-  
-  .appCard {
-    height: 62px;
-    width: 62px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 36px;
-    border-radius: 20px;
-  }
+  height: 100%;
+  margin: 0;
+}
 
-  .appIcon {
-    height: 62px;
-    width: 62px;
-  }
-  
-  #bottomContainer {
-    height: 90px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    background-color: rgb(188, 188, 188, 0.5);
-    border-radius: 25px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: auto;
-    place-items: center;
-  }
+body {
+  touch-action: none;
+  background-image: url(images/work.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Arial, sans-serif;
+  backdrop-filter: blur(10px);
+}
 
-  #bottomContainer .appCard {
-    margin-top: 12px;
-  }
+#topContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 22px 0 22px;
+  color: white;
+  margin-top: 18px;
+  z-index: 10000;
+}
 
-  #iconContainer {
-    display: flex;
-    height: 20px;
-    gap: 5px;
-    width: 75px;
-  }
+#apps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 70px 20px;
+  place-items: center;
+}
 
-  .time {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
+.appCard {
+  height: 62px;
+  width: 62px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 36px;
+  border-radius: 20px;
+}
 
-  .appText {
-    margin: 4px;
-    font-size: 11px;
-    color: white;
-  }
+.appIcon {
+  height: 62px;
+  width: 62px;
+}
+
+#bottomContainer {
+  height: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(188, 188, 188, 0.5);
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: auto;
+  place-items: center;
+}
+
+#bottomContainer .appCard {
+  margin-top: 12px;
+}
+
+#iconContainer {
+  display: flex;
+  height: 20px;
+  gap: 5px;
+  width: 75px;
+}
+
+.time {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.appText {
+  margin: 4px;
+  font-size: 11px;
+  color: white;
+}
 
 

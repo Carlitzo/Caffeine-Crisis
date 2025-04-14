@@ -50,7 +50,7 @@ export function renderHomepage() {
                 <p class="appText">Settings</p>
             </div>
             <div class="appCard">
-                <img src="icons/instagram.svg" id="instgramIcon" alt="" class="appIcon">
+                <img src="icons/instagram.svg" id="instagramIcon" alt="" class="appIcon">
                 <p class="appText">Instagram</p>
             </div>
         </main>

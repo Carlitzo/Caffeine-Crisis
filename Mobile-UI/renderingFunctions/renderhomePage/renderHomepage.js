@@ -10,6 +10,7 @@ export function renderHomepage() {
         <main id="apps">
             <div class="appCard">
                 <img src="icons/facetime.svg" id="phoneIcon" alt="" class="appIcon">
+                <p class="appText">Telefon</p>
             </div>
             </div>
             <div class="appCard">
@@ -38,6 +39,9 @@ export function renderHomepage() {
             </div>
             <div class="appCard">
                 <img src="icons/settings.svg" id="settingsIcon" alt="" class="appIcon">
+            </div>
+            <div class="appCard">
+                <img src="icons/instagram.svg" id="instgramIcon" alt="" class="appIcon">
             </div>
         </main>
         <footer id="bottomContainer">

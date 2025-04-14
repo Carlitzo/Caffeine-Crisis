@@ -36,12 +36,12 @@ html, body {
     width: 62px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     margin-bottom: 36px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
   }
-  
+
   .appIcon {
     height: 62px;
     width: 62px;
@@ -74,3 +74,11 @@ html, body {
   .time {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
+
+  .appText {
+    margin: 2px;
+    font-size: 14px;
+    color: white;
+  }
+
+

@@ -1,6 +1,6 @@
 html, body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin: 65px 20px;
+  margin: 70px 20px;
   place-items: center;
 }
 
@@ -38,15 +38,49 @@ body {
   width: 62px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 36px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 
 .appIcon {
   height: 62px;
   width: 62px;
+}
+
+#bottomContainer {
+  height: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(188, 188, 188, 0.5);
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: auto;
+  place-items: center;
+}
+
+#bottomContainer .appCard {
+  margin-top: 12px;
+}
+
+#iconContainer {
+  display: flex;
+  height: 20px;
+  gap: 5px;
+  width: 75px;
+}
+
+.time {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.appText {
+  margin: 4px;
+  font-size: 11px;
+  color: white;
 }
 
 #bottomContainer {

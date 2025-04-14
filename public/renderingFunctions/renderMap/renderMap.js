@@ -54,7 +54,7 @@ function initLeafletMap() {
     });
 
     const icaMaxiIcon = L.icon({
-        iconUrl: './images/kartikoner/Kaffemått.png',
+        iconUrl: './images/kartikoner/Kaffematt.png',
         iconSize: [42, 42],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]

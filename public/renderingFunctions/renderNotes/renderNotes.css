@@ -1,37 +1,43 @@
 #notesHeader {
 font-weight: bold;
-    font-size: large;
-    margin: 0;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin: 0 0 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 #notesDiv {
     width: 100%;
     height: 100%;
-    background-color: rgb(235, 235, 211);
+    background-color: rgb(255, 255, 248);
     position: absolute;
     z-index: 10;
     padding: 20px;
-    padding-top: 120px;
-    padding-left: 30px;
+    padding-top: 95px;
 }
 
-#notesReturnButton {
+#returnContainer {
+    display: flex;
     background: none;
     position: absolute;
-    top: 75px;
+    top: 55px;
     left: 8px;
     border: none;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
     color: #FEAC05;
+    justify-content: center;
+    align-items: center;
+}
+
+#returnContainerLeft {
+    display: flex;
     cursor: pointer;
+    align-items: center;
 }
 
 #tasksContainer {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
 }
 
 #notesContainer {
@@ -44,8 +50,10 @@ font-weight: bold;
 .taskContainer {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.4rem;
     align-items: center;
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
 
 input {
@@ -66,4 +74,26 @@ input {
 input[type="checkbox"]:checked {
     background-color: #FEAC05;
     border-color: #FEAC05;
+}
+
+#notesDate {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#returnImageArrow {
+    height: 32px;
+}
+
+
+#shareImg {
+    margin-left: 140px;
+    height: 30px;
+}
+
+#moreIcon {
+    margin-left: 25px;
+    height: 25px;
 }

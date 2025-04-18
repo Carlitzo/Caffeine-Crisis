@@ -44,13 +44,13 @@ export function renderPhone(phoneIcon) {
     timerElement.textContent = "00:10";
     nameElement.textContent = "Kerstin ❤️";
     
-    imageOfCallerElement.src = "./images/Kerstin.jpg";
-    soundIcon.src = "./icons/PhoneIcons/volume.png";
-    facetimeIcon.src = "./icons/phoneIcons/facetime-button.png";
-    soundOffIcon.src = "./icons/phoneIcons/mute.png";
-    addUserIcon.src = "./icons/phoneIcons/add-friend.png";
-    endCallIcon.src = "./icons/phoneIcons/circle.png";
-    keypadIcon.src = "./icons/phoneIcons/dial.png";
+    imageOfCallerElement.src = "./../MOBILE_UI/images/Kerstin.jpg";
+    soundIcon.src = "./../MOBILE_UI/icons/PhoneIcons/volume.png";
+    facetimeIcon.src = "./../MOBILE_UI/icons/phoneIcons/facetime-button.png";
+    soundOffIcon.src = "./../MOBILE_UI/icons/phoneIcons/mute.png";
+    addUserIcon.src = "./../MOBILE_UI/icons/phoneIcons/add-friend.png";
+    endCallIcon.src = "./../MOBILE_UI/icons/phoneIcons/circle.png";
+    keypadIcon.src = "./../MOBILE_UI/icons/phoneIcons/dial.png";
     audio.src = ""; 
     // audio.load(); aktivera igen när en ljudfil finns
     

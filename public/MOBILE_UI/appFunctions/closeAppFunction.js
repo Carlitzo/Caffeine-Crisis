@@ -13,8 +13,8 @@ export function closeAppFunction(appDiv, iconElement) {
     appDiv.style.height = `${iconRect.height}px`;
 
     header.style.color = "white";
-    signalIcon.src = "./icons/signal-white.png";
-    batteryIcon.src = "./icons/battery-white.png";
+    signalIcon.src = "./../MOBILE_UI/icons/signal-white.png";
+    batteryIcon.src = "./../MOBILE_UI/icons/battery-white.png";
     
     setTimeout(() => {
         appDiv.remove();

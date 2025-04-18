@@ -1,5 +1,4 @@
 export function openAppFunction(iconElement, appDiv) {
-    
     const iconRect = iconElement.getBoundingClientRect();
     const header = document.getElementById("topContainer");
     const signalIcon = document.getElementById("signalIcon");
@@ -9,8 +8,8 @@ export function openAppFunction(iconElement, appDiv) {
     const relativeTop = iconRect.top;
 
     header.style.color = "black";
-    signalIcon.src = "./icons/signal-black.png";
-    batteryIcon.src = "./icons/battery-black.png";
+    signalIcon.src = "./../MOBILE_UI/icons/signal-black.png";
+    batteryIcon.src = "./../MOBILE_UI/icons/battery-black.png";
 
     appDiv.style.opacity = "0";
 

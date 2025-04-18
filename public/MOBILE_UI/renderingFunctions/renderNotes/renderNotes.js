@@ -23,11 +23,11 @@ export function renderNotes(notesIcon) {
     returnContainer.id = "returnContainer";
     returnContainerLeft.id = "returnContainerLeft";
     returnImageArrow.id = "returnImageArrow";
-    returnImageArrow.src = "./icons/arrow-notes.png";
+    returnImageArrow.src = "./../MOBILE_UI/icons/arrow-notes.png";
     shareImgage.id = "shareImg";
-    shareImgage.src = "./icons/shareIcon.png";
+    shareImgage.src = "./../MOBILE_UI/icons/shareIcon.png";
     moreIcon.id = "moreIcon";
-    moreIcon.src = "./icons/moreIcon.png";
+    moreIcon.src = "./../MOBILE_UI/icons/moreIcon.png";
 
     const tasks = ["Hämta kaffefilter från Orkanen", "Prata med Göran om kaffemått", "Gå till varvsparken", "Gå till agilitybanan", "Ta emot kaffebönor av Kerstin"];
     const tasksContainer = document.createElement("div");

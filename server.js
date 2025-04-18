@@ -39,7 +39,7 @@ const requestHandler = async (req) => {
   if (
     path.startsWith("/MOBILE_UI/") ||
     path.startsWith("/MINI_GAME/") ||
-    path.startsWith("/INTRO_TEXT/")
+    path.startsWith("/TEXT_HAPPENINGS/")
   ) {
     const filePath = `./public${path}`;
     try {

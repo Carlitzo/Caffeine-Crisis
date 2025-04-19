@@ -9,23 +9,6 @@ console.log = (...args) => {
   originalLog(`[${location}]`, ...args);
 };
 
-// const requestHandler = async (req) => {
-//   const url = new URL(req.url, "http://localhost:8888");
-
-//   if (url.pathname === "/favicon.ico") {
-//       return new Response(null, { status: 204 });
-//   }
-
-//   const filePath = `./public${url.pathname === "/" ? "/index.html" : url.pathname}`;
-  
-//   try {
-//       return await serveFile(req, filePath);
-//   } catch (error) {
-//       console.error(`Error serving file: ${error.message}`);
-//       return new Response("File not found", { status: 404 }); 
-//   }
-// }
-
 const requestHandler = async (req) => {
   const url = new URL(req.url, "http://localhost:8888");
   const path = url.pathname;
@@ -35,14 +18,24 @@ const requestHandler = async (req) => {
     return new Response("Method not allowed", { status: 405 });
   }
 
+  if (req.method !== "GET") {
+    return new Promise("Method not allowed", { status: 405 });
+  }
+
   // Serva filer beroende på path
   if (
     path.startsWith("/MOBILE_UI/") ||
     path.startsWith("/MINI_GAME/") ||
     path.startsWith("/TEXT_HAPPENINGS/")
   ) {
-    const filePath = `./public${path}`;
+    let filePath = `./public${path}`;
+
+    if (path.endsWith("/")) {
+      filePath += "index.html";
+      
+    }
     try {
+      console.log(filePath);
       return await serveFile(req, filePath);
     } catch {
       return new Response("File not found", { status: 404 });

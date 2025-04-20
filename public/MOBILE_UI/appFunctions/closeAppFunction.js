@@ -18,5 +18,5 @@ export function closeAppFunction(appDiv, iconElement) {
     
     setTimeout(() => {
         appDiv.remove();
-    }, 100)
+    }, 200)
 }

@@ -35,7 +35,6 @@ const requestHandler = async (req) => {
       
     }
     try {
-      console.log(filePath);
       return await serveFile(req, filePath);
     } catch {
       return new Response("File not found", { status: 404 });

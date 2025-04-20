@@ -38,6 +38,5 @@ export function openAppFunction(iconElement, appDiv) {
         appDiv.style.top = "0px";
         appDiv.style.width = "100vw";
         appDiv.style.height = "100vh";
-    }, 5);
-
+    }, 100);
 }

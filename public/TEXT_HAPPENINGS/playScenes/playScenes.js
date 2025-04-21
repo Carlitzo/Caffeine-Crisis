@@ -8,6 +8,22 @@ export function playScenes(sceneNumber, dialogueData) {
     let currentLine = 0;
     let isTyping = false;
 
+    switch(sceneNumber) {
+        case 1 :
+        {
+            const backgroundImage = document.getElementById("wrapper");
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara_johannes.jpeg")`;
+        }
+        case 2 :
+        {
+                
+        }
+        case 3 :
+        {
+
+        }
+    }
+
     function typeWriterEffect(text, element, speed = 30, onComplete) {
         let i = 0;
         element.textContent = "";

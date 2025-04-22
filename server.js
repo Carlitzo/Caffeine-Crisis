@@ -32,7 +32,6 @@ const requestHandler = async (req) => {
 
     if (path.endsWith("/")) {
       filePath += "index.html";
-      
     }
     try {
       return await serveFile(req, filePath);

@@ -14,8 +14,9 @@ export function renderTemplate() {
     textBubbleText.id = "textBubbleText";
     arrowContainer.id = "arrowContainer";
     arrowImg.id = "arrowImg";
+    arrowImg.src = "./icons/arrow.svg";
 
-    document.body.appendChild(wrapper);
+    document.body.appendChild(wrapper); 
     wrapper.appendChild(personSpeakingWrapper);
     wrapper.appendChild(textBubble);
     wrapper.appendChild(arrowContainer);

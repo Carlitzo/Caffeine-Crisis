@@ -4,7 +4,7 @@ export const dialogueData = {
       { character: "Olle", line: "Ja, det är bra med mig. Hur är det själv?" },
       { character: "Johannes", line: "Det är inte så bra faktiskt. Jag är illamående och yr men förstår inte riktigt varför?" },
       { character: "Olle", line: "Men oj, det låter inte så bra, har du inte hunnit äta dina perfekt kokta ägg idag? Det kanske är därför du mår dåligt?" },
-      { character: "Johannes", line: "Jo, det har jag faktiskt. Det är något annat som är fel. Du får ta den där komplettering snacket med Maria istället. Hon borde vara på våning 4 vid kaffemaskinen." }
+      { character: "Johannes", line: "Jo, det har jag faktiskt. Det är något annat som är fel. Du får ta den där kompletteringsnacket med Maria istället. Hon borde vara på våning 4 vid kaffemaskinen." }
     ],
     "2": [
       { character: "Thomas", line: "Hörrö du!! Har du något kaffe????!!?!?" },

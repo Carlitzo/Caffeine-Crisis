@@ -1,3 +1,5 @@
+import { updateSpeaker } from "./../updateSpeaker/updateSpeaker.js";
+
 export function playScenes(sceneNumber, dialogueData) {
 
     const scene = dialogueData[sceneNumber.toString()];
@@ -12,11 +14,11 @@ export function playScenes(sceneNumber, dialogueData) {
         case 1 :
         {
             const backgroundImage = document.getElementById("wrapper");
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara_johannes.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
         }
         case 2 :
         {
-                
+            
         }
         case 3 :
         {
@@ -52,8 +54,8 @@ export function playScenes(sceneNumber, dialogueData) {
         }
 
         const { character, line } = scene[index];
-        // speakerImg.src = characterImages[character] || "images/default.png";
-
+        
+        updateSpeaker(speakerImg, character);
         typeWriterEffect(line, textBubbleText);
     }
 

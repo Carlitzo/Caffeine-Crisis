@@ -1,0 +1,24 @@
+#personSpeakingImgJohannes {
+  position: absolute;
+  top: 40vh;
+  left: 20vw;
+}
+
+#personSpeakingImgOlle {
+  position: absolute;
+  top: 46vh;
+  left: -50vw;
+  max-width: 150vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+}
+
+#personSpeakingImgJohannes,
+#personSpeakingImgOlle,
+#personSpeakingImgMaria,
+#personSpeakingImgThomas,
+#personSpeakingImgGöran,
+#personSpeakingImgAlbin {
+  transition: top 0.5s ease, left 0.5s ease, opacity 0.3s ease;
+}

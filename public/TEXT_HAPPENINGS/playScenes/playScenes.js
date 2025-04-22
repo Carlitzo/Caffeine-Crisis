@@ -9,20 +9,26 @@ export function playScenes(sceneNumber, dialogueData) {
 
     let currentLine = 0;
     let isTyping = false;
+    const backgroundImage = document.getElementById("wrapper");
 
     switch(sceneNumber) {
         case 1 :
         {
-            const backgroundImage = document.getElementById("wrapper");
             backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            break;
         }
         case 2 :
         {
             
+            break;
         }
         case 3 :
         {
-
+            break;
+        }
+        case 4 : 
+        {
+            break;
         }
     }
 

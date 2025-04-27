@@ -81,36 +81,39 @@ export function renderHomepage() {
                 <img src="./../MOBILE_UI/icons/maps.svg" id="mapsIcon" alt="" class="appIcon">
             </div>
         </footer>
+
+        <!-- Toast-container + ljud -->
+        <div id="toastContainer"></div>
+        <audio id="toastSound" src="./../MOBILE_UI/sounds/notification.mp3" preload="auto"></audio>
     `;
 
-    // Lägg till toast-element i DOM
-    document.body.insertAdjacentHTML('beforeend', `
-        <div id="notificationToast" class="hidden">
-            <p id="toastMessage">Appen är inte tillgänglig.</p>
-        </div>
-    `);
-
-    // Toast-funktion
+    // 🔔 Toast-funktion
     function showToast(message) {
-        const toast = document.getElementById("notificationToast");
-        const toastMsg = document.getElementById("toastMessage");
+        const container = document.getElementById("toastContainer");
+        const sound = document.getElementById("toastSound");
 
-        toastMsg.textContent = message;
-        toast.classList.remove("hidden");
+        // Skapa unik toast
+        const toast = document.createElement("div");
+        toast.className = "notificationToast show";
+        toast.innerHTML = `<p>${message}</p>`;
+        container.prepend(toast); // Ny notis läggs överst
 
-        setTimeout(() => {
-            toast.classList.add("show");
-        }, 10);
+        // Spela ljud
+        if (sound) {
+            sound.currentTime = 0;
+            sound.play();
+        }
 
+        // Ta bort toast efter tid
         setTimeout(() => {
             toast.classList.remove("show");
             setTimeout(() => {
-                toast.classList.add("hidden");
+                toast.remove();
             }, 400);
         }, 3000);
     }
 
-    // Lista på appar som INTE ska kunna klickas
+    // 🛑 Appar som INTE kan klickas
     const disabledAppSelectors = [
         "facetime.svg", "calender.svg", "mail.svg", "clock.svg", 
         "photo-album.svg", "weather.svg", "calculator.svg", 
@@ -118,7 +121,7 @@ export function renderHomepage() {
         "safari.svg"
     ];
 
-    // Sätt click-event för inaktiva appar
+    // ⚙️ Lägg till eventlisteners
     document.querySelectorAll('.appCard').forEach(app => {
         const img = app.querySelector('img');
         if (img) {

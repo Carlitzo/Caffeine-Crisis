@@ -14,19 +14,36 @@ export function playScenes(sceneNumber, dialogueData) {
     switch(sceneNumber) {
         case 1 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Teachersroom.png")`;
             break;
         }
         case 2 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/thomas_4.png")`;
             break;
         }
         case 3 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/maria_kafe")`;
             break;
         }
+        case 4:
+        {
+            break;
+        }
+        case 5:
+        {
+            break;
+        }
+        case 6:
+        {
+            break;
+        }
+        case 7:
+        {
+            break;
+        }
+        
     }
 
     function typeWriterEffect(text, element, speed = 30, onComplete) {

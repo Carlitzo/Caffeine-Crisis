@@ -81,8 +81,6 @@ export function renderHomepage() {
                 <img src="./../MOBILE_UI/icons/maps.svg" id="mapsIcon" alt="" class="appIcon">
             </div>
         </footer>
-
-        <!-- Toast-container + ljud -->
         <div id="toastContainer"></div>
         <audio id="toastSound" src="./../MOBILE_UI/sounds/notification.mp3" preload="auto"></audio>
     `;

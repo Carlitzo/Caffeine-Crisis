@@ -56,16 +56,14 @@ export function playScenes(sceneNumber, dialogueData) {
         return;
         }
 
-        console.log(scene[index].character);
-
-        if (scene[index].character === "Beskrivning") {
-            const { character, line } = scene[index + 1];
-        }
-        
         const { character, line } = scene[index];
 
-        
-        updateSpeaker(speakerImg, character);
+        if (character === "Beskrivning") {
+            textBubbleText.style.fontStyle = "italic";
+        } else {
+            textBubbleText.style.fontStyle = "normal";
+            updateSpeaker({ speakerImg: speakerImg, character: character });
+        }
         typeWriterEffect(line, textBubbleText);
     }
 

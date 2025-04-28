@@ -6,10 +6,10 @@ export function playScenes(sceneNumber, dialogueData) {
     const textBubbleText = document.getElementById("textBubbleText");
     const speakerImg = document.getElementById("personSpeakingImg");
     const arrowContainer = document.getElementById("arrowContainer");
+    const backgroundImage = document.getElementById("wrapper");
 
     let currentLine = 0;
     let isTyping = false;
-    const backgroundImage = document.getElementById("wrapper");
 
     switch(sceneNumber) {
         case 1 :
@@ -19,15 +19,12 @@ export function playScenes(sceneNumber, dialogueData) {
         }
         case 2 :
         {
-            
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
             break;
         }
         case 3 :
         {
-            break;
-        }
-        case 4 : 
-        {
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
             break;
         }
     }
@@ -59,7 +56,12 @@ export function playScenes(sceneNumber, dialogueData) {
         return;
         }
 
+        if (scene[index] === "Beskrivning") {
+            const { character, line } = scene[index + 1];
+        }
+        
         const { character, line } = scene[index];
+
         
         updateSpeaker(speakerImg, character);
         typeWriterEffect(line, textBubbleText);

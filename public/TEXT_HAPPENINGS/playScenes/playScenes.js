@@ -56,7 +56,9 @@ export function playScenes(sceneNumber, dialogueData) {
         return;
         }
 
-        if (scene[index] === "Beskrivning") {
+        console.log(scene[index].character);
+
+        if (scene[index].character === "Beskrivning") {
             const { character, line } = scene[index + 1];
         }
         

@@ -1,42 +1,96 @@
 export const dialogueData = {
-    "1": [
-      { character: "Johannes", line: "Tjena Olle. Allt bra?" },
-      { character: "Olle", line: "Ja, det är bra med mig. Hur är det själv?" },
-      { character: "Johannes", line: "Det är inte så bra faktiskt. Jag är illamående och yr men förstår inte riktigt varför?" },
-      { character: "Olle", line: "Men oj, det låter inte så bra, har du inte hunnit äta dina perfekt kokta ägg idag? Det kanske är därför du mår dåligt?" },
-      { character: "Johannes", line: "Jo, det har jag faktiskt. Det är något annat som är fel. Du får ta den där kompletteringsnacket med Maria istället. Hon borde vara på våning 4 vid kaffemaskinen." }
-    ],
-    "2": [
-      { character: "Thomas", line: "Hörrö du!! Har du något kaffe????!!?!?" },
-      { character: "Olle", line: "Uhm nä?" },
-      { character: "Thomas", line: "Men vafan, skit it då!" }
-    ],
-    "3": [
-      {
-        character: "Beskrivning",
-        line: "Maria trycker frenetiskt på alla knappar på kaffemaskinen. Hennes ögon är tomma och blodsprängda och hon skakar, det rinner saliv från hennes högra mungipa."
-      },
-      { character: "Olle", line: "Eeee, hur mår du Maria?" },
-      { character: "Maria", line: "Ilsket morr." },
-      { character: "Albin", line: "Jag ska prata med Maria nu, flytta på dig!!!" },
-      { character: "Olle", line: "Oooookej?" }
-    ],
-    "4": [
-      {
-        character: "Beskrivning",
-        line: "Göran sitter på ett underlag på marken bredvid sin överfulla kundvagn och stickar vad som liknar en mössa."
-      },
-      { character: "Göran", line: "Vafan Olle. Det var inte igååårr. Hur är läget egentligen?" },
-      { character: "Olle", line: "Göran, jag behöver din hjälp! Allt kaffe är slut och mina lärare har blivit helt galna. Jag ska försöka rädda dem och behöver få tag i grejer så jag kan brygga kaffe till alla. Har du inte något i din kundvagn som kan hjälpa mig?" },
-      { character: "Göran", line: "Gud va sjukt , så coolt, men ja, vafan, det är klart att jag har något i kundvagnen som kan hjälpa dig. Vänta lite så ska jag kika." },
-      { character: "Beskrivning", line: "Göran kollar igenom kundvagnen" },
-      { character: "Göran", line: "Här har vi något. Ett kaffemått." },
-      { character: "Olle", line: "Ja, jag tar vad som helst, tack så jättemycket." },
-      { character: "Göran", line: "Nehee du! Stop. Du får det inte så lätt. Först måste du svara på en gåta och när du har löst den så kan du få måttet, ha ha ha." },
-      { character: "Olle", line: "Jahaaaa okej då men det behöver gå snabbt." },
-      { character: "Göran", line: "Ja ja ja, GÅTA" },
-      { character: "Olle", line: "SVARET" },
-      { character: "Göran", line: "Snyggt Olle. Nu har du förtjänat kaffemåttet och jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
-      { character: "Olle", line: "Ja, absolut det löser jag, tack Göran." }
-    ]
-  };
+  "1": [
+    { character: "Johannes", line: "Tjena Olle. Hur är läget? Ska vi ta och kolla på grejerna du ligger efter i kanske…" },
+    { character: "Olle", line: "Ja, det är väl bra med mig. Inget jobb idag tydligen, kafét var stängt, jätteskumt… Hur är det själv?" },
+    { character: "Beskrivning", line: "Olle ser att Johannes är lite väck, han är helt tom i sin annars så pigga ögon." },
+    { character: "Johannes", line: "Näää, det är inte så bra faktiskt. Jag mår lite konstigt, är typ illamående och yr men fattar inte varför?" },
+    { character: "Beskrivning", line: "Johannes andas tungt och svettdroppar rullar ner för pannan som snart är helt blank." },
+    { character: "Olle", line: "Men oj, det låter inte så bra, har du inte hunnit äta dina perfekt kokta ägg idag? Det kanske är därför du mår dåligt? Eller var de för lösa kanske, typ att du fått salmonella??" },
+    { character: "Johannes", line: "Mina ägg var perfekta. Det är något annat som är fel, något känns riktigt off…" },
+    { character: "Beskrivning", line: "Johannes torkar svetten ur pannan." },
+    { character: "Olle", line: "Usch då va konstigt. Hoppas att du mår bättre snart igen!" },
+    { character: "Beskrivning", line: "Olle tar några steg tillbaka, han vill ju fan inte få nån salmonella on top på sin sociala ångest." },
+    { character: "Johannes", line: "Aja, du får nog ta det där kompletteringssnacket med Maria istället kanske. Jag tror hon är på våning 4 och hämtar kaffe, du vet vid kaffemaskinen. Jag orkar inte det här nu!" },
+    { character: "Beskrivning", line: "Johannes rosslar till och hans ögon börjar bli rödaktiga." },
+    { character: "Olle", line: "Okeeej... Men du Johannes, ska du inte ringa vårdcentralen? Du låter inte som dig själv?" },
+    { character: "Johannes", line: "Men jo jo allt är okej, äggen bubblar säkert i magen bara…Will do. Tack Olle, det löser sig." }
+  ],
+  "2": [
+    { character: "Thomas", line: "Hörrö du!! Har du något kaffe eller?!?!? Hallåååååå, HALLÅÅÅ!!!" },
+    { character: "Olle", line: "Uhm nä? Thomas, hur är det?" },
+    { character: "Beskrivning", line: "Olle ryggar tillbaka." },
+    { character: "Thomas", line: "Men vafan, skit i’t då!" },
+    { character: "Beskrivning", line: "Thomas klampar iväg med bestämda steg och muttrar någonting ilsket för sig själv." }
+  ],
+  "3": [
+    { character: "Beskrivning", line: "Maria står vid kaffebehållarna och försöker hälla i sig de sista kaffedropparna. När kaffet är slut kastar hon den ifrån sig och tar nästa. Hon skakar frustrerat den stora behållaren." },
+    { character: "Olle", line: "Eeeeh hej, hur mår du Maria…?" },
+    { character: "Beskrivning", line: "Maria morrar bara som svar." },
+    { character: "Olle", line: "Maria?? Hallå? Mår du bra eller?" },
+    { character: "Beskrivning", line: "Albin, Olles värsta mobbarfiende stormar förbi och puttar bort Olle." },
+    { character: "Albin", line: "Jag ska prata med Maria nu, flytta på dig förfan! Du får vänta, din lilla kaffetönt!!" },
+    { character: "Olle", line: "Oookej? Chilla…" },
+    { character: "Beskrivning", line: "Maria kastar sig över Albin och trycker ner honom på marken. Hennes fingrar borrar sig djupt in i Albins bröstkorg. Albin skriker, Maria klöser." },
+    { character: "Albin", line: "HJÄÄÄÄÄÄÄLP!!!! AAAAAAHHH!!" },
+    { character: "Beskrivning", line: "Maria biter honom strax ovanför nyckelbenet och ryter som ett djur." },
+    { character: "Maria", line: "RAAAWR!" }
+  ],
+  "4": [
+    { character: "Olle", line: "Okej, okej, andas. Ingen lärare i sikte." },
+    { character: "Beskrivning", line: "Olle andas ut och in och försöker hitta lugnet på sitt safe space." },
+    { character: "Olle", line: "Vad i hela... VAD ÄR DET SOM HÄNDER???" },
+    { character: "Olle", line: "En sekund är jag på väg till Maria och nästa sekund försöker någon tugga på min axel?!? Det här är ju heeelt overkligt, ett stort jävla skämt måste det va. Vad händer?!" },
+    { character: "Olle", line: "Måste kolla sociala medier... Sociala medier vet allt. Hmmm låt mig se... Japp. Där! En nyhetsvideo på Sydsvenskan." },
+    { character: "Beskrivning", line: "Kollar på videoklippen med FÖRFÄRAN." },
+    { character: "Olle", line: "Det här är ju inte ens ett skämt WTF!!!" },
+    { character: "Olle", line: "Okej, tänk Olle, tänk. Du är smart, du löste ju Rubiks kub på två minuter – visserligen för att du trodde det var ett antagningskrav till nästa kurs, men ändå." },
+    { character: "Beskrivning", line: "Olles smarta hjärna börjar gå på högvarv." },
+    { character: "Olle", line: "Juste, Thomas skrek ju på mig om att han ville ha kaffe och Maria blev ju helt galen borta i kafét…" },
+    { character: "Olle", line: "Alla lärare dricker kaffe. Mycket kaffe, hela tiden. Dom knarkar ju skiten typ. Om allt kaffe tagit slut samtidigt kanske de har fått… vad heter det… abstinens?" },
+    { character: "Olle", line: "Kan det verkligen vara så att de blivit zombie-galna utan kaffe? Hjälp…" },
+    { character: "Beskrivning", line: "Olle hör skrik på avstånd och ser elever springa ut från skolan." },
+    { character: "Olle", line: "Jag behöver lösa detta, vem annars ska göra det… Men jag behöver en plan! Och hjälp. Kerstin. Jag måste ringa Kerstin. Hon kanske vet. Och hon lugnar mig alltid. Kerstin<3" }
+  ],
+  "5": [
+    { character: "Olle", line: "Kerstin!!! Du måste hjälpa mig!" },
+    { character: "Beskrivning", line: "Olle ropar hysteriskt i luren direkt när Kerstin svarar." },
+    { character: "Kerstin", line: "Tag det roligt, Olle. Hvad er der sket?" },
+    { character: "Beskrivning", line: "Kerstins silkeslena röst lyckas INTE lugna Olle idag." },
+    { character: "Olle", line: "Lärarna i skolan har blivit galna och anfaller alla elever och jag tror att det beror på att kaffet är slut och allt är helt sjukt här borta! Kaffemaskinerna blinkar och tomma kaffekoppar ligger utspridda på hela skolan. Så de måste vara kaffeabstinens, en KAFFEIN-KRIS!!" },
+    { character: "Kerstin", line: "Du, det her lyder faktisk som noget, der skete i Danmark for et par uger siden. Men dengang var det øllen, der var løbet tør, hele København var ved at gå under. Men nogen løste det ved at brygge deres egen øl." },
+    { character: "Olle", line: "Är de sant??? Då kanske jag kan lösa det på något sätt?!" },
+    { character: "Kerstin", line: "Ja! Det er sandt! Du arbejder jo alligevel på Espresso House og kan brygge kaffe til alle." },
+    { character: "Olle", line: "Ja men det är slut där också tror jag för det var nedstängt när jag kom till jobbet… så hur ska jag lösa det?" },
+    { character: "Kerstin", line: "Nu må du fandeme bare løse det. Hvis du finder alle de dele, der skal til for at brygge kaffen, så kan jeg sørge for at møde dig ved den indre fyr ved Orkanen med kaffe. Jeg sender en liste over de ting, du har brug for. Deal?" },
+    { character: "Olle", line: "Okejokejokej! Det låter bra, ja det blir nog bra, det måste bli bra. Tack bästa Kerstin, vi möts vid fyren när jag har hämtat alla delar. Jag skyndar mig!" }
+  ],
+  "6": [
+    { character: "Beskrivning", line: "Göran sitter på ett underlag på marken bredvid sin överfulla kundvagn och stickar vad som ska likna en mössa." },
+    { character: "Göran", line: "Vafan TJEEENA Olle. Det var inte igår grabben! Hur är läget egentligen? Du ser blekare ut än vanligt." },
+    { character: "Olle", line: "Göran, jag behöver din hjälp! Allt kaffe på skolan är slut och mina lärare har blivit helt sick in the brain. Jag ska försöka lösa nytt kaffe och rädda dem så jag behöver få tag på grejer jag kan brygga kaffe med. Har inte du något i din kundvagn som kan hjälpa mig? Du har ju allt där i!" },
+    { character: "Göran", line: "Gud va sjukt, så coolt, men ja vafan, det är klart att jag har något i kundvagnen som kan hjälpa dig. Vänta lite så ska jag kolla." },
+    { character: "Beskrivning", line: "Göran rotar igenom kundvagnen." },
+    { character: "Göran", line: "Jaaahdååå! Här har vi något! Ett kaffemått!" },
+    { character: "Olle", line: "Jag tar vad som helst, tack så jättemycket Göran! Kingen!" },
+    { character: "Göran", line: "Nehee du! Stopp min kropp. Den får du inte så lätt. Först måste du svara på en gåta och när du har löst den så kan du få måttet, ha ha ha." },
+    { character: "Olle", line: "Jahapp okej då men det behöver gå snabbt, jag har inte all tid i världen idag." },
+    { character: "Göran", line: "Ja ja ja, GÅTA" },
+    { character: "Olle", line: "SVARET" },
+    { character: "Göran", line: "Snyggt Olle! Nu har du förtjänat kaffemåttet, jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
+    { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." }
+  ],
+  "7": [
+    { character: "Olle", line: "Här, här är jag!" },
+    { character: "Beskrivning", line: "Olle flåsar jäkligt ansträngt." },
+    { character: "Kerstin", line: "Gud, hvor lang tid det tog dig, Olle." },
+    { character: "Olle", line: "Jag försökte faktiskt mitt bästa och snabbaste men det var fan många utmaningar att lösa. Men nu är jag här som tur!" },
+    { character: "Kerstin", line: "Har du alle ting?" },
+    { character: "Olle", line: "Japp, det löste sig till slut, fasen vad jag slitit." },
+    { character: "Kerstin", line: "Så godt, jeg har kaffen her i båden, kom og hjælp mig." },
+    { character: "Olle", line: "Ja, absolut. Jag är så glad över att du är här. En ängel är du!!!" },
+    { character: "Kerstin", line: "Jeg vil altid hjælpe dig Olle, men nu må du skynde dig til Niagara og lave kaffe!" },
+    { character: "Olle", line: "Jaja, jag springer nu, tack igen, älskar dig!" },
+    { character: "Beskrivning", line: "Olle glömmer bort att han inte sagt 'älskar dig' tidigare men har inte tid att få ångest och springer i full fart tillbaka mot skolan." },
+    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø!" }
+  ]
+};

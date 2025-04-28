@@ -1,6 +1,15 @@
 var player;
 var cursors;
+var jumpButton;
+var leftButton;
+var rightButton;
 var jumpCounter;
+var pole; // Lyktstolpen
+var bottom;
+var background;
+var platforms;
+var touchLeft = false;
+var touchRight = false;
 
 var config = {
     type: Phaser.AUTO,
@@ -9,7 +18,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 300 },
+            gravity: { y: 1200 },
             debug: false
         }
     },
@@ -24,34 +33,34 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-    this.load.image('sky', 'assets/sky.png');
-    this.load.image('ground', 'assets/platform.png');
-    this.load.image('star', 'assets/star.png');
-    this.load.image('bomb', 'assets/bomb.png');
-    this.load.spritesheet('dude', 
-        'assets/dude.png',
-        { frameWidth: 32, frameHeight: 48 }
-    );
+    this.load.image('background', 'assets/sky.png');
+    this.load.image('bottom', 'assets/platform.png');
+    // this.load.image('pole', 'assets/pole.png'); // En lång lyktstolpe-bild
+    this.load.image('buttonJump', 'assets/buttonJump.png'); // En enkel hoppknapp-bild
+    this.load.image('buttonLeft', 'assets/buttonLeft.png');
+    this.load.image('buttonRight', 'assets/buttonRight.png');
+    this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 });
 }
 
 function create ()
 {
-    this.add.image(this.scale.width / 2, this.scale.height / 2, 'sky').setDisplaySize(this.scale.width, this.scale.height);
 
+    background = this.add.image(this.scale.width / 2, this.scale.height, 'background');
+    background.setDisplaySize(this.scale.width * 2, this.scale.height * 6);
 
-    let platforms = this.physics.add.staticGroup();
+    platforms = this.physics.add.staticGroup();
 
-    platforms.create(this.scale.width, 568, 'ground').setScale(2).refreshBody();
-    platforms.create(600, 400, 'ground');
-    platforms.create(50, 250, 'ground');
-    platforms.create(750, 220, 'ground');
+    // Lägg till lyktstolpen och gör den väldigt hög
+    // pole = this.add.tileSprite(0, 0, this.scale.width, 5000, 'pole');
+    // pole.setOrigin(0, 0);
 
-    player = this.physics.add.sprite(100, 450, 'dude');
-
+    // Skapa spelaren
+    player = this.physics.add.sprite(this.scale.width/2, this.scale.height - 100, 'dude');
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
     player.setScale(1.3);
-    player.body.setGravityY(400);
+
+    this.physics.add.collider(player, platforms);
 
     this.anims.create({
         key: 'left',
@@ -73,38 +82,67 @@ function create ()
         repeat: -1
     });
 
-    cursors = this.input.keyboard.createCursorKeys();
-    this.physics.add.collider(player, platforms);
-
     jumpCounter = 0;
+
+    // Skapa touchknappar
+    leftButton = this.add.image(80, this.scale.height - 80, 'buttonLeft').setInteractive();
+    rightButton = this.add.image(this.scale.width - 80, this.scale.height - 80, 'buttonRight').setInteractive();
+    jumpButton = this.add.image(this.scale.width / 2, this.scale.height - 80, 'buttonJump').setInteractive();
+
+    leftButton.setScale(0.1);
+    rightButton.setScale(0.1);
+    jumpButton.setScale(0.3);
+
+    leftButton.setPosition(80, this.scale.height - 80);
+    rightButton.setPosition(this.scale.width - 80, this.scale.height - 80);
+    jumpButton.setPosition(this.scale.width / 2, this.scale.height - 80);
+
+    leftButton.on('pointerdown', () => { touchLeft = true; });
+    leftButton.on('pointerup', () => { touchLeft = false; });
+
+    rightButton.on('pointerdown', () => { touchRight = true; });
+    rightButton.on('pointerup', () => { touchRight = false; });
+
+    jumpButton.on('pointerdown', () => {
+        if (jumpCounter < 2) {
+            player.setVelocityY(-500);
+            jumpCounter++;
+        }
+    });
+
+    // Kamera följer spelaren
+    this.cameras.main.startFollow(player);
+    this.cameras.main.setBounds(0, 0, this.scale.width, this.scale.height * 3.5);
+    this.physics.world.setBounds(0, 0, this.scale.width, this.scale.height * 3.38);
 }
 
 function update ()
 {
-    if (cursors.left.isDown) 
+    // Scrolla bakgrunden beroende på spelarens höjd
+    // pole.tilePositionY = this.cameras.main.scrollY;
+
+    leftButton.setPosition(80, (this.scale.height - (this.scale.height * 0.06)) + this.cameras.main.scrollY);
+    rightButton.setPosition(this.scale.width - 80, (this.scale.height - (this.scale.height * 0.06)) + this.cameras.main.scrollY);
+    jumpButton.setPosition(this.scale.width / 2, (this.scale.height - (this.scale.height * 0.06)) + this.cameras.main.scrollY);
+
+    if (touchLeft)
     {
-        player.setVelocityX(-160);
+        player.setVelocityX(-200);
         player.anims.play('left', true);
     }
-    else if (cursors.right.isDown) 
+    else if (touchRight)
     {
-        player.setVelocityX(160);
+        player.setVelocityX(200);
         player.anims.play('right', true);
-    } 
-    else 
+    }
+    else
     {
         player.setVelocityX(0);
         player.anims.play('turn', true);
     }
 
-    if (player.body.onFloor()) 
+    if (player.body.onFloor())
     {
         jumpCounter = 0;
-    }
-
-    if (Phaser.Input.Keyboard.JustDown(cursors.up) && jumpCounter < 2)
-    {
-        player.setVelocityY(-400);
-        jumpCounter++;
     }
 }

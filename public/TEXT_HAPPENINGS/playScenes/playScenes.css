@@ -24,6 +24,14 @@
   height: auto;
 }
 
+#personSpeakingImgMaria {
+  position: absolute;
+  left: 9vh;
+  width: 81vw;
+  height: 40vh;
+  top: 60vh;
+}
+
 #personSpeakingImgJohannes,
 #personSpeakingImgOlle,
 #personSpeakingImgMaria,

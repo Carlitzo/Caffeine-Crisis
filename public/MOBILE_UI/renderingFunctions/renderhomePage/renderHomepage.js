@@ -22,10 +22,6 @@ export function renderHomepage() {
                 <p class="appText">Mail</p>
             </div>
             <div class="appCard">
-                <img src="./../MOBILE_UI/icons/clock.svg" class="appIcon">
-                <p class="appText">Klocka</p>
-            </div>
-            <div class="appCard">
                 <img src="./../MOBILE_UI/icons/photo-album.svg" alt="" class="appIcon">
                 <p class="appText">Bilder</p>
             </div>
@@ -46,12 +42,12 @@ export function renderHomepage() {
                 <p class="appText">Inställningar</p>
             </div>
             <div class="appCard">
-                <img src="./../MOBILE_UI/icons/calculator.svg" id="calculatorIcon" alt="" class="appIcon">
-                <p class="appText">Miniräknare</p>
-            </div>
-            <div class="appCard">
                 <img src="./../MOBILE_UI/icons/app-store.svg" id="appStoreIcon" alt="" class="appIcon">
                 <p class="appText">App Store</p>
+            </div>
+            <div class="appCard">
+                <img src="./../MOBILE_UI/icons/sydsvenska.png" id="sydsvenskanIcon" alt="" class="appIcon">
+                <p class="appText">Sydsvenskan</p>
             </div>
             <div class="appCard">
                 <img src="./../MOBILE_UI/icons/instagram.svg" id="instagramIcon" alt="" class="appIcon">
@@ -62,8 +58,22 @@ export function renderHomepage() {
                 <p class="appText">Tiktok</p>
             </div>
             <div class="appCard">
+                <img src="./../MOBILE_UI/icons/aftonbladet.png" id="aftonbladetIcon" alt="" class="appIcon">
+                <p class="appText">Aftonbladet</p>
+            </div>
+            <div class="appCard">
                 <img src="./../MOBILE_UI/icons/youtube.png" id="youtubeIcon" alt="" class="appIcon">
                 <p class="appText">Youtube</p>
+            </div>
+            <div id="youtubePopup">
+                <div class="popup-content">
+                    <span id="closePopup">&times;</span>
+                    <p>Spela upp videon:</p>
+                    <video id="youtubeVideo" controls>
+                        <source src="./../MOBILE_UI/videos/Never_gonna.mp4" type="video/mp4">
+                        Din webbläsare stödjer inte video-taggen.
+                    </video>
+                </div>
             </div>
         </main>
 

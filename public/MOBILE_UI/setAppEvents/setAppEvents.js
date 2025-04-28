@@ -8,6 +8,8 @@ export function setAppEvents() {
     const instagramIcon = document.getElementById("instagramIcon");
     const mapsIcon = document.getElementById("mapsIcon");
     const phoneIcon = document.getElementById("phoneIcon");
+    const youtubeIcon = document.getElementById("youtubeIcon");
+
     
     notesIcon.addEventListener("click", () => {
         renderNotes(notesIcon);
@@ -26,4 +28,9 @@ export function setAppEvents() {
     phoneIcon.addEventListener("click", () => {
         renderPhone(phoneIcon);
     })
+
+    youtubeIcon.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    });
 }

@@ -14,17 +14,17 @@ export function playScenes(sceneNumber, dialogueData) {
     switch(sceneNumber) {
         case 1 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Teachersroom.png")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Teachersroom.jpg")`;
             break;
         }
         case 2 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/thomas_4.png")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/thomas_4.jpg")`;
             break;
         }
         case 3 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/maria_kafe")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/maria_kafe.jpg")`;
             break;
         }
         case 4:

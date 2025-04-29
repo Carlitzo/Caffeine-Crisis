@@ -35,7 +35,7 @@ function preload ()
 {
     this.load.image('background', 'assets/sky.png');
     this.load.image('bottom', 'assets/platform.png');
-    // this.load.image('pole', 'assets/pole.png'); // En lång lyktstolpe-bild
+    this.load.image('pole', 'assets/pole.png'); // En lång lyktstolpe-bild
     this.load.image('buttonJump', 'assets/buttonJump.png'); // En enkel hoppknapp-bild
     this.load.image('buttonLeft', 'assets/buttonLeft.png');
     this.load.image('buttonRight', 'assets/buttonRight.png');
@@ -50,10 +50,10 @@ function create ()
 
     platforms = this.physics.add.staticGroup();
 
-    // Lägg till lyktstolpen och gör den väldigt hög
-    // pole = this.add.tileSprite(0, 0, this.scale.width, 5000, 'pole');
-    // pole.setOrigin(0, 0);
-
+    pole = this.add.tileSprite(this.scale.width / 2, (this.scale.height * 3.38) - 2500 / 2, 100, 2500, 'pole');
+    this.physics.add.existing(pole, true);
+    platforms.add(pole);
+    
     // Skapa spelaren
     player = this.physics.add.sprite(this.scale.width/2, this.scale.height - 100, 'dude');
     player.setBounce(0.2);

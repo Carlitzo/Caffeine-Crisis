@@ -4,7 +4,7 @@ var jumpButton;
 var leftButton;
 var rightButton;
 var jumpCounter;
-var pole; // Lyktstolpen
+var pole;
 var bottom;
 var background;
 var platforms;
@@ -18,7 +18,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 1200 },
+            gravity: { y: 600 },
             debug: false
         }
     },
@@ -34,7 +34,7 @@ var game = new Phaser.Game(config);
 function preload ()
 {
     this.load.image('background', 'assets/sky.png');
-    this.load.image('bottom', 'assets/platform.png');
+    this.load.image('bottom', 'assets/platta.png');
     this.load.image('pole', 'assets/pole.png'); // En lång lyktstolpe-bild
     this.load.image('buttonJump', 'assets/buttonJump.png'); // En enkel hoppknapp-bild
     this.load.image('buttonLeft', 'assets/buttonLeft.png');
@@ -50,10 +50,27 @@ function create ()
 
     platforms = this.physics.add.staticGroup();
 
-    pole = this.add.tileSprite(this.scale.width / 2, (this.scale.height * 3.38) - 2500 / 2, 100, 2500, 'pole');
-    this.physics.add.existing(pole, true);
-    platforms.add(pole);
+    pole = this.add.image(this.scale.width / 2, (this.scale.height * 3.425) - 2400 / 2, 'pole');
+    pole.setDisplaySize(100, 2400);
     
+    const platformSpacing = 100;
+    const topLimit = 200;
+    const offsetX = 80; // hur långt från stolpens mitt (stolpen är 100 px bred)
+
+    let startY = this.physics.world.bounds.height - 100;
+
+    for (let i = 0, y = startY; y > topLimit; i++, y -= platformSpacing) {
+        let x;
+        if (i % 2 === 0) {
+            x = this.scale.width / 2 - offsetX; // vänster sida
+        } else {
+            x = this.scale.width / 2 + offsetX; // höger sida
+        }
+    
+        const platform = platforms.create(x, y, 'bottom');
+        platform.setScale(0.8).refreshBody(); // anpassa om bilden är för stor
+    }
+
     // Skapa spelaren
     player = this.physics.add.sprite(this.scale.width/2, this.scale.height - 100, 'dude');
     player.setBounce(0.2);

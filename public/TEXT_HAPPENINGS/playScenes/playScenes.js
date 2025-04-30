@@ -14,19 +14,36 @@ export function playScenes(sceneNumber, dialogueData) {
     switch(sceneNumber) {
         case 1 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Teachersroom.jpg")`;
             break;
         }
         case 2 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/thomas_4.jpg")`;
             break;
         }
         case 3 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Niagara.jpeg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/maria_kafe.jpg")`;
             break;
         }
+        case 4:
+        {
+            break;
+        }
+        case 5:
+        {
+            break;
+        }
+        case 6:
+        {
+            break;
+        }
+        case 7:
+        {
+            break;
+        }
+        
     }
 
     function typeWriterEffect(text, element, speed = 30, onComplete) {
@@ -56,14 +73,14 @@ export function playScenes(sceneNumber, dialogueData) {
         return;
         }
 
-        if (scene[index] === "Beskrivning") {
-            const { character, line } = scene[index + 1];
-        }
-        
         const { character, line } = scene[index];
 
-        
-        updateSpeaker(speakerImg, character);
+        if (character === "Beskrivning") {
+            textBubbleText.style.fontStyle = "italic";
+        } else {
+            textBubbleText.style.fontStyle = "normal";
+            updateSpeaker({ speakerImg: speakerImg, character: character });
+        }
         typeWriterEffect(line, textBubbleText);
     }
 

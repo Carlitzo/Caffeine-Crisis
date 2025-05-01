@@ -82,7 +82,38 @@ export function playScenes(sceneNumber, dialogueData) {
             textBubbleText.style.fontStyle = "normal";
             updateSpeaker({ speakerImg: speakerImg, character: character });
         }
+
         typeWriterEffect(line, textBubbleText);
+
+        if (sceneNumber === 5 && index === 10) {
+            const wrapper = document.getElementById("wrapper");
+            const inputContainer = document.createElement("div");
+            const inputField = document.createElement("input");
+
+            inputContainer.id = "answerInputContainer";
+            inputField.id = "answerInputField";
+            inputField.type = "text";
+            inputField.placeholder = "skriv ditt svar här...";
+
+            wrapper.appendChild(inputContainer);
+            inputContainer.appendChild(inputField);
+
+            let correctAnswer = "kaffe";
+            
+            inputField.addEventListener("keydown", (event) => {
+                if (event.key === "Enter") {
+                    if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+                        inputContainer.remove();
+                        currentLine++;
+                        showLine(currentLine);
+                    } else {
+                        inputField.value = "";
+                        inputField.placeholder = "Fel svar, försök igen...";
+                    }
+                }
+            });
+            return;
+        }
     }
 
     // Sätt upp klick-event

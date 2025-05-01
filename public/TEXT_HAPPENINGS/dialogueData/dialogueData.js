@@ -61,17 +61,17 @@ export const dialogueData = {
   ],
   "5": [
     { character: "Beskrivning", line: "Göran sitter på ett underlag på marken bredvid sin överfulla kundvagn och stickar vad som ska likna en mössa." },
-    { character: "Göran", line: "Vafan TJEEENA Olle. Det var inte igår grabben! Hur är läget egentligen? Du ser blekare ut än vanligt." },
+    { character: "Goran", line: "Vafan TJEEENA Olle. Det var inte igår grabben! Hur är läget egentligen? Du ser blekare ut än vanligt." },
     { character: "Olle", line: "Göran, jag behöver din hjälp! Allt kaffe på skolan är slut och mina lärare har blivit helt sick in the brain. Jag ska försöka lösa nytt kaffe och rädda dem så jag behöver få tag på grejer jag kan brygga kaffe med. Har inte du något i din kundvagn som kan hjälpa mig? Du har ju allt där i!" },
-    { character: "Göran", line: "Gud va sjukt, så coolt, men ja vafan, det är klart att jag har något i kundvagnen som kan hjälpa dig. Vänta lite så ska jag kolla." },
+    { character: "Goran", line: "Gud va sjukt, så coolt, men ja vafan, det är klart att jag har något i kundvagnen som kan hjälpa dig. Vänta lite så ska jag kolla." },
     { character: "Beskrivning", line: "Göran rotar igenom kundvagnen." },
-    { character: "Göran", line: "Jaaahdååå! Här har vi något! Ett kaffemått!" },
+    { character: "Goran", line: "Jaaahdååå! Här har vi något! Ett kaffemått!" },
     { character: "Olle", line: "Jag tar vad som helst, tack så jättemycket Göran! Kingen!" },
-    { character: "Göran", line: "Nehee du! Stopp min kropp. Den får du inte så lätt. Först måste du svara på en gåta och när du har löst den så kan du få måttet, ha ha ha." },
+    { character: "Goran", line: "Nehee du! Stopp min kropp. Den får du inte så lätt. Först måste du svara på en gåta och när du har löst den så kan du få måttet, ha ha ha." },
     { character: "Olle", line: "Jahapp okej då men det behöver gå snabbt, jag har inte all tid i världen idag." },
-    { character: "Göran", line: "Ja ja ja, GÅTA" },
+    { character: "Goran", line: "Ja ja ja, GÅTA" },
     { character: "Olle", line: "SVARET" },
-    { character: "Göran", line: "Snyggt Olle! Nu har du förtjänat kaffemåttet, jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
+    { character: "Goran", line: "Snyggt Olle! Nu har du förtjänat kaffemåttet, jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
     { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." }
   ],
   "6": [

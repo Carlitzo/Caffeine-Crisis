@@ -34,11 +34,21 @@
   height: auto;
 }
 
+#personSpeakingImgGoran {
+  position: absolute;
+  top: 46vh;
+  left: 5vw;
+  max-width: 150vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+}
+
 #personSpeakingImgJohannes,
 #personSpeakingImgOlle,
 #personSpeakingImgMaria,
 #personSpeakingImgThomas,
-#personSpeakingImgGöran,
+#personSpeakingImgGoran,
 #personSpeakingImgAlbin {
   transition: top 0.5s ease, left 0.5s ease, opacity 0.3s ease;
 }

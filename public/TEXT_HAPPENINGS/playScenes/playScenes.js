@@ -33,6 +33,7 @@ export function playScenes(sceneNumber, dialogueData) {
         }
         case 5:
         {
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/maxi.jpg")`;
             break;
         }
         case 6:

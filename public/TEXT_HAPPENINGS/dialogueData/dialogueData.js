@@ -1,7 +1,7 @@
 export const dialogueData = {
   "1": [
     { character: "Johannes", line: "Tjena Olle. Hur är läget? Ska vi ta och kolla på grejerna du ligger efter i kanske…" },
-    { character: "Olle", line: "Ja, det är väl bra med mig. Inget jobb idag tydligen, kafét var stängt, jätteskumt… Hur är det själv?" },
+    { character: "Olle", line: "Ja, det är väl bra med mig. Inget jobb idag tydligen, Espresso House var stängt, jätteskumt… Hur är det själv?" },
     { character: "Beskrivning", line: "Olle ser att Johannes är lite väck, han är helt tom i sina vanligtvis pigga ögon." },
     { character: "Johannes", line: "Näää, det är inte så bra faktiskt. Jag mår lite konstigt, är typ illamående och yr men fattar inte varför?" },
     { character: "Beskrivning", line: "Johannes andas tungt och svettdroppar rullar ner för pannan som snart är helt blank." },

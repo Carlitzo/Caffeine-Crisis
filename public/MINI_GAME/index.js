@@ -125,17 +125,25 @@ function create ()
     rightButton.setPosition(this.scale.width - 80, this.scale.height - 80);
     jumpButton.setPosition(this.scale.width / 2, this.scale.height - 80);
 
-    leftButton.on('pointerdown', () => { touchLeft = true; });
-    leftButton.on('pointerup', () => { touchLeft = false; });
+    leftButton.on('pointerdown', () => { touchLeft = true; leftButton.setAlpha(0.6) });
+    leftButton.on('pointerup', () => { touchLeft = false; leftButton.setAlpha(1) });
 
-    rightButton.on('pointerdown', () => { touchRight = true; });
-    rightButton.on('pointerup', () => { touchRight = false; });
+    rightButton.on('pointerdown', () => { touchRight = true; rightButton.setAlpha(0.6) });
+    rightButton.on('pointerup', () => { touchRight = false; rightButton.setAlpha(1) });
 
     jumpButton.on('pointerdown', () => {
+        jumpButton.setAlpha(0.6)
         if (jumpCounter < 2) {
             player.setVelocityY(-500);
             jumpCounter++;
         }
+    });
+
+    jumpButton.on('pointerup', () => {
+        jumpButton.setAlpha(1);
+    });
+    jumpButton.on('pointerout', () => {
+        jumpButton.setAlpha(1);
     });
 
     this.cameras.main.startFollow(player);
@@ -166,7 +174,6 @@ function update ()
         player.setVelocityX(0);
         player.anims.play('turn', true);
     }
-
     if (player.body.onFloor())
     {
         jumpCounter = 0;

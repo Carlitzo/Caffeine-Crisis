@@ -1,7 +1,11 @@
 #personSpeakingImgJohannes {
   position: absolute;
-  top: 40vh;
-  left: 20vw;
+  top: 20vh;
+  left: 0vw;
+  max-width: 180vw;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 #personSpeakingImgOlle {

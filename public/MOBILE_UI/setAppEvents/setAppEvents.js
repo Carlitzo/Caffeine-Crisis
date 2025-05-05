@@ -1,6 +1,7 @@
 import { renderNotes } from "../renderingFunctions/renderNotes/renderNotes.js";
 import { renderMap } from "../renderingFunctions/renderMap/renderMap.js";
 import { renderPhone } from "../renderingFunctions/renderPhone/renderPhone.js";
+import { renderNews } from "../renderingFunctions/renderNews/renderNews.js";
 
 export function setAppEvents() {
     const notesIcon = document.getElementById("notesIcon");
@@ -10,6 +11,7 @@ export function setAppEvents() {
     const youtubeIcon = document.getElementById("youtubeIcon");
     const youtubePopup = document.getElementById("youtubePopup");
     const youtubeVideo = document.getElementById("youtubeVideo");
+    const newsIcon = document.getElementById("sydsvenskanIcon");
     const closePopup = document.getElementById("closePopup");
 
     if (notesIcon && instagramIcon && mapsIcon && phoneIcon && youtubeIcon && youtubePopup && youtubeVideo && closePopup) {
@@ -52,5 +54,9 @@ export function setAppEvents() {
                 youtubeVideo.src = "";
             }
         });
+
+        newsIcon.addEventListener("click", (event) => {
+            renderNews(newsIcon);
+        })
     }
 }

@@ -1,0 +1,23 @@
+#newsContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#newsImg {
+    height: 100%;
+    width: 100%;
+}
+
+#videoSydsvenskan {
+    position: absolute;
+    background-color: black;
+    width: 90%;
+    height: 40%;
+    top: 47vh;
+    left: 5vw;
+}

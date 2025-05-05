@@ -1,7 +1,11 @@
 #personSpeakingImgJohannes {
   position: absolute;
-  top: 40vh;
-  left: 20vw;
+  top: 20vh;
+  left: 0vw;
+  max-width: 180vw;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 #personSpeakingImgOlle {
@@ -34,6 +38,16 @@
   height: auto;
 }
 
+#personSpeakingImgAlbin {
+  position: absolute;
+  top: 45vh;
+  left: 5vw;
+  max-width: 110vw;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+}
+
 #personSpeakingImgGoran {
   position: absolute;
   top: 46vh;
@@ -50,7 +64,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  background-color: rgb(239, 232, 188);
+  background-color: #846141;
   padding: 30px;
 }
 

@@ -1,7 +1,7 @@
 export const dialogueData = {
   "1": [
     { character: "Johannes", line: "Tjena Olle. Hur är läget? Ska vi ta och kolla på grejerna du ligger efter i kanske…" },
-    { character: "Olle", line: "Ja, det är väl bra med mig. Inget jobb idag tydligen, kafét var stängt, jätteskumt… Hur är det själv?" },
+    { character: "Olle", line: "Ja, det är väl bra med mig. Inget jobb idag tydligen, Espresso House var stängt, jätteskumt… Hur är det själv?" },
     { character: "Beskrivning", line: "Olle ser att Johannes är lite väck, han är helt tom i sina vanligtvis pigga ögon." },
     { character: "Johannes", line: "Näää, det är inte så bra faktiskt. Jag mår lite konstigt, är typ illamående och yr men fattar inte varför?" },
     { character: "Beskrivning", line: "Johannes andas tungt och svettdroppar rullar ner för pannan som snart är helt blank." },
@@ -69,7 +69,7 @@ export const dialogueData = {
     { character: "Olle", line: "Jag tar vad som helst, tack så jättemycket Göran! Kingen!" },
     { character: "Goran", line: "Nehee du! Stopp min kropp. Den får du inte så lätt. Först måste du svara på en gåta och när du har löst den så kan du få måttet, ha ha ha." },
     { character: "Olle", line: "Jahapp okej då men det behöver gå snabbt, jag har inte all tid i världen idag." },
-    { character: "Goran", line: "Ja ja ja, GÅTA" },
+    { character: "Goran", line: `Ja ja ja, : "Jag smyger in i kroppen och väcker cellerna. För mycket av mig kan få dig att darra som en zombie. Vad är jag?"` },
     { character: "Olle", line: "SVARET" },
     { character: "Goran", line: "Snyggt Olle! Nu har du förtjänat kaffemåttet, jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
     { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." }

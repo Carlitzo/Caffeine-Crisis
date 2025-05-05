@@ -19,7 +19,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 900 },
+            gravity: { y: 700 },
             debug: false
         }
     },
@@ -70,7 +70,7 @@ function create ()
         }
 
         if (i === 2) {
-            heightMultiplier -= 0.10;
+            heightMultiplier -= 0.15;
         } else if (i === 5) {
             heightMultiplier -= 0.30;
         } else {
@@ -125,17 +125,25 @@ function create ()
     rightButton.setPosition(this.scale.width - 80, this.scale.height - 80);
     jumpButton.setPosition(this.scale.width / 2, this.scale.height - 80);
 
-    leftButton.on('pointerdown', () => { touchLeft = true; });
-    leftButton.on('pointerup', () => { touchLeft = false; });
+    leftButton.on('pointerdown', () => { touchLeft = true; leftButton.setAlpha(0.6) });
+    leftButton.on('pointerup', () => { touchLeft = false; leftButton.setAlpha(1) });
 
-    rightButton.on('pointerdown', () => { touchRight = true; });
-    rightButton.on('pointerup', () => { touchRight = false; });
+    rightButton.on('pointerdown', () => { touchRight = true; rightButton.setAlpha(0.6) });
+    rightButton.on('pointerup', () => { touchRight = false; rightButton.setAlpha(1) });
 
     jumpButton.on('pointerdown', () => {
+        jumpButton.setAlpha(0.6)
         if (jumpCounter < 2) {
             player.setVelocityY(-500);
             jumpCounter++;
         }
+    });
+
+    jumpButton.on('pointerup', () => {
+        jumpButton.setAlpha(1);
+    });
+    jumpButton.on('pointerout', () => {
+        jumpButton.setAlpha(1);
     });
 
     this.cameras.main.startFollow(player);
@@ -153,12 +161,12 @@ function update ()
 
     if (touchLeft)
     {
-        player.setVelocityX(-200);
+        player.setVelocityX(-300);
         player.anims.play('left', true);
     }
     else if (touchRight)
     {
-        player.setVelocityX(200);
+        player.setVelocityX(300);
         player.anims.play('right', true);
     }
     else
@@ -166,7 +174,6 @@ function update ()
         player.setVelocityX(0);
         player.anims.play('turn', true);
     }
-
     if (player.body.onFloor())
     {
         jumpCounter = 0;

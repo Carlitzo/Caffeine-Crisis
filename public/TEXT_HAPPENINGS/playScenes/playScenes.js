@@ -14,7 +14,7 @@ export function playScenes(sceneNumber, dialogueData) {
     switch(sceneNumber) {
         case 1 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Teachersroom.jpg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/teachersroom.jpg")`;
             break;
         }
         case 2 :
@@ -38,6 +38,7 @@ export function playScenes(sceneNumber, dialogueData) {
         }
         case 6:
         {
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/PNG_fyr.png")`;
             break;
         }
         case 7:
@@ -99,11 +100,13 @@ export function playScenes(sceneNumber, dialogueData) {
             inputContainer.appendChild(inputField);
 
             let correctAnswer = "kaffe";
+            let correctAnswerTwo = "koffein";
             
             inputField.addEventListener("keydown", (event) => {
                 if (event.key === "Enter") {
-                    if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+                    if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase() || inputField.value.trim().toLowerCase() === correctAnswerTwo.toLowerCase()) {
                         inputContainer.remove();
+                        window.scrollTo(0, 0);
                         currentLine++;
                         showLine(currentLine);
                     } else {

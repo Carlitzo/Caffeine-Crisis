@@ -13,6 +13,7 @@ export function renderNotes(notesIcon) {
     const returnImageArrow = document.createElement("img");
     const shareImgage = document.createElement("img");
     const moreIcon = document.createElement("img");
+    
     notesDiv.id = "notesDiv";
     notesDate.id ="notesDate";
     notesDate.textContent = "13 April 2025 17:39";

@@ -19,7 +19,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 900 },
+            gravity: { y: 700 },
             debug: false
         }
     },
@@ -70,7 +70,7 @@ function create ()
         }
 
         if (i === 2) {
-            heightMultiplier -= 0.10;
+            heightMultiplier -= 0.15;
         } else if (i === 5) {
             heightMultiplier -= 0.30;
         } else {
@@ -153,12 +153,12 @@ function update ()
 
     if (touchLeft)
     {
-        player.setVelocityX(-200);
+        player.setVelocityX(-300);
         player.anims.play('left', true);
     }
     else if (touchRight)
     {
-        player.setVelocityX(200);
+        player.setVelocityX(300);
         player.anims.play('right', true);
     }
     else

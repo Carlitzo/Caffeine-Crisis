@@ -22,10 +22,6 @@ export function renderHomepage() {
                 <p class="appText">Mail</p>
             </div>
             <div class="appCard">
-                <img src="./../MOBILE_UI/icons/clock.svg" class="appIcon">
-                <p class="appText">Klocka</p>
-            </div>
-            <div class="appCard">
                 <img src="./../MOBILE_UI/icons/photo-album.svg" alt="" class="appIcon">
                 <p class="appText">Bilder</p>
             </div>
@@ -46,12 +42,12 @@ export function renderHomepage() {
                 <p class="appText">Inställningar</p>
             </div>
             <div class="appCard">
-                <img src="./../MOBILE_UI/icons/calculator.svg" id="calculatorIcon" alt="" class="appIcon">
-                <p class="appText">Miniräknare</p>
-            </div>
-            <div class="appCard">
                 <img src="./../MOBILE_UI/icons/app-store.svg" id="appStoreIcon" alt="" class="appIcon">
                 <p class="appText">App Store</p>
+            </div>
+            <div class="appCard">
+                <img src="./../MOBILE_UI/icons/sydsvenska.png" id="sydsvenskanIcon" alt="" class="appIcon">
+                <p class="appText">Sydsvenskan</p>
             </div>
             <div class="appCard">
                 <img src="./../MOBILE_UI/icons/instagram.svg" id="instagramIcon" alt="" class="appIcon">
@@ -62,8 +58,22 @@ export function renderHomepage() {
                 <p class="appText">Tiktok</p>
             </div>
             <div class="appCard">
+                <img src="./../MOBILE_UI/icons/aftonbladet.png" id="aftonbladetIcon" alt="" class="appIcon">
+                <p class="appText">Aftonbladet</p>
+            </div>
+            <div class="appCard">
                 <img src="./../MOBILE_UI/icons/youtube.png" id="youtubeIcon" alt="" class="appIcon">
                 <p class="appText">Youtube</p>
+            </div>
+            <div id="youtubePopup">
+                <div class="popup-content">
+                    <span id="closePopup">&times;</span>
+                    <p>Spela upp videon:</p>
+                    <video id="youtubeVideo" controls>
+                        <source src="./../MOBILE_UI/videos/Never_gonna.mp4" type="video/mp4">
+                        Din webbläsare stödjer inte video-taggen.
+                    </video>
+                </div>
             </div>
         </main>
 
@@ -81,36 +91,37 @@ export function renderHomepage() {
                 <img src="./../MOBILE_UI/icons/maps.svg" id="mapsIcon" alt="" class="appIcon">
             </div>
         </footer>
+        <div id="toastContainer"></div>
+        <audio id="toastSound" src="./../MOBILE_UI/sounds/notification.mp3" preload="auto"></audio>
     `;
 
-    // Lägg till toast-element i DOM
-    document.body.insertAdjacentHTML('beforeend', `
-        <div id="notificationToast" class="hidden">
-            <p id="toastMessage">Appen är inte tillgänglig.</p>
-        </div>
-    `);
-
-    // Toast-funktion
+    // 🔔 Toast-funktion
     function showToast(message) {
-        const toast = document.getElementById("notificationToast");
-        const toastMsg = document.getElementById("toastMessage");
+        const container = document.getElementById("toastContainer");
+        const sound = document.getElementById("toastSound");
 
-        toastMsg.textContent = message;
-        toast.classList.remove("hidden");
+        // Skapa unik toast
+        const toast = document.createElement("div");
+        toast.className = "notificationToast show";
+        toast.innerHTML = `<p>${message}</p>`;
+        container.prepend(toast); // Ny notis läggs överst
 
-        setTimeout(() => {
-            toast.classList.add("show");
-        }, 10);
+        // Spela ljud
+        if (sound) {
+            sound.currentTime = 0;
+            sound.play();
+        }
 
+        // Ta bort toast efter tid
         setTimeout(() => {
             toast.classList.remove("show");
             setTimeout(() => {
-                toast.classList.add("hidden");
+                toast.remove();
             }, 400);
         }, 3000);
     }
 
-    // Lista på appar som INTE ska kunna klickas
+    // 🛑 Appar som INTE kan klickas
     const disabledAppSelectors = [
         "facetime.svg", "calender.svg", "mail.svg", "clock.svg", 
         "photo-album.svg", "weather.svg", "calculator.svg", 
@@ -118,7 +129,7 @@ export function renderHomepage() {
         "safari.svg"
     ];
 
-    // Sätt click-event för inaktiva appar
+    // ⚙️ Lägg till eventlisteners
     document.querySelectorAll('.appCard').forEach(app => {
         const img = app.querySelector('img');
         if (img) {

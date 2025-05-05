@@ -1,16 +1,19 @@
 import { renderTemplate } from "./renderingFunctions/renderTemplate/renderTemplate.js";
 import { playScenes } from "./playScenes/playScenes.js";
 import { dialogueData } from "./dialogueData/dialogueData.js";
-
-renderTemplate();
+import { showProlog } from "./prologEpilog/prologEpilog.js";
 
 const urlParams = new URLSearchParams(window.location.search);
-const sceneParam = urlParams.get("scene");
+const sceneParam = parseInt(urlParams.get("scene"), 10);
 
-// Exempel: Ladda rätt scen beroende på scene-param
-if (sceneParam) {
-  const sceneNumber = parseInt(sceneParam, 10);
-  playScenes(sceneNumber, dialogueData);
+if (sceneParam === 1) {
+  showProlog(() => {
+    renderTemplate();
+    playScenes(1, dialogueData);
+  });
+} else if (sceneParam) {
+  renderTemplate();
+  playScenes(sceneParam, dialogueData);
 } else {
   console.warn("Ingen scene GET-param hittades.");
 }

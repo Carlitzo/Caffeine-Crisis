@@ -24,7 +24,7 @@ export function renderMap(mapIcon) {
 
 function initLeafletMap() {
     // Skapa en Leaflet-karta
-    const map = L.map('map', { zoomControl: false}).setView([55.6077, 12.9960], 15); // Västra Hamnens koordinater
+    const map = L.map('map', { zoomControl: false, touchZoom: true, scrollWheelZoom: false, doubleClickZoom: true, boxZoom: false}).setView([55.6077, 12.9960], 15); // Västra Hamnens koordinater
 
     // Lägg till OpenStreetMap baslager
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -86,7 +86,7 @@ function initLeafletMap() {
     L.marker([55.6068, 12.9749], { icon: agilitybananIcon }).addTo(map).bindPopup('Agilitybanan');
     L.marker([55.6118, 12.9804], { icon: icaMaxiIcon }).addTo(map).bindPopup('Ica-Maxi-Göran');
     L.marker([55.6108, 12.9951], { icon: orkanenIcon }).addTo(map).bindPopup('Orkanenbiblioteket');
-    L.marker([55.6088, 12.9911], { icon: safeSpaceIcon }).addTo(map).bindPopup('Safespace <3');
+    L.marker([55.6101, 12.9933], { icon: safeSpaceIcon }).addTo(map).bindPopup('Safespace <3');
     L.marker([55.6089, 12.9943], { icon: niagaraIcon }).addTo(map).bindPopup('Niagara');
 
     const userMarker = L.marker([0, 0]);
@@ -95,12 +95,8 @@ function initLeafletMap() {
     navigator.geolocation.watchPosition((position) => {
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
-
-        console.log(`Spelarens GPS-position: Lat: ${lat}, Lon: ${lon}`);
         
         userMarker.setLatLng([lat, lon]).bindPopup("Din GPS-location").openPopup();
-
-        map.setView([lat, lon], 15);
     },
         (error) => {
             console.log(`${error.message} no position available`);

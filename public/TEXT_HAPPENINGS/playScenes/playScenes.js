@@ -14,7 +14,7 @@ export function playScenes(sceneNumber, dialogueData) {
     switch(sceneNumber) {
         case 1 :
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/Teachersroom.jpg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/teachersroom.jpg")`;
             break;
         }
         case 2 :

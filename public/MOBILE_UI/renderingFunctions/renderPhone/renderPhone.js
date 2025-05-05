@@ -2,7 +2,7 @@ import { openAppFunction } from "../../appFunctions/openAppFunction.js";
 import { closeAppFunction } from "../../appFunctions/closeAppFunction.js";
 
 export function renderPhone(phoneIcon) {
-    
+
     const phoneDiv = document.createElement("div");
     const phoneWrapper = document.createElement("div");
     const timerAndNameContainer = document.createElement("div");
@@ -33,17 +33,16 @@ export function renderPhone(phoneIcon) {
     keypadIcon.id = "keypadIcon";
     audio.id = "audio";
 
-    
     soundIcon.classList.add("phoneSelectionIcon");
     facetimeIcon.classList.add("phoneSelectionIcon");
     soundOffIcon.classList.add("phoneSelectionIcon");
     addUserIcon.classList.add("phoneSelectionIcon");
     endCallIcon.classList.add("phoneSelectionIcon");
     keypadIcon.classList.add("phoneSelectionIcon");
-    
+
     timerElement.textContent = "00:10";
     nameElement.textContent = "Kerstin ❤️";
-    
+
     imageOfCallerElement.src = "./../MOBILE_UI/images/Kerstin.jpg";
     soundIcon.src = "./../MOBILE_UI/icons/PhoneIcons/volume.png";
     facetimeIcon.src = "./../MOBILE_UI/icons/phoneIcons/facetime-button.png";
@@ -51,9 +50,8 @@ export function renderPhone(phoneIcon) {
     addUserIcon.src = "./../MOBILE_UI/icons/phoneIcons/add-friend.png";
     endCallIcon.src = "./../MOBILE_UI/icons/phoneIcons/circle.png";
     keypadIcon.src = "./../MOBILE_UI/icons/phoneIcons/dial.png";
-    audio.src = ""; 
-    // audio.load(); aktivera igen när en ljudfil finns
-    
+    audio.src = "./../MOBILE_UI/sounds/TelefonKerstinOlle.mp3";
+
     phoneDiv.appendChild(phoneWrapper);
     phoneDiv.appendChild(audio);
     phoneWrapper.appendChild(timerAndNameContainer);
@@ -61,7 +59,7 @@ export function renderPhone(phoneIcon) {
     phoneWrapper.appendChild(selectionWrapper);
     timerAndNameContainer.appendChild(timerElement);
     timerAndNameContainer.appendChild(nameElement);
-    
+
     const selectionIcons = [soundIcon, facetimeIcon, soundOffIcon, addUserIcon, endCallIcon, keypadIcon];
     const iconTexts = ["Ljud", "Facetime", "Ljud av", "Lägg till", "Avsluta", "Knappsats"];
     const selectionIconWrappers = [];
@@ -89,17 +87,17 @@ export function renderPhone(phoneIcon) {
 
     openAppFunction(phoneIcon, phoneDiv);
 
-    // setTimeout(() => {
-    //     audio.play().catch((error) => {
-    //         console.error("Autoplay misslyckades", error);
-    //     })
-    // }, 2000);
-    // kommentera tillbaka när en ljudfil finns
+    audio.play().catch((error) => {
+        console.error("Autoplay misslyckades", error);
+    });
 
     endCallIcon.addEventListener("click", () => {
+        // Stoppa och återställ ljudet
+        audio.pause();
+        audio.currentTime = 0;
+
         setTimeout(() => {
             closeAppFunction(phoneDiv, phoneIcon);
         }, 30);
-    })
-
+    });
 }

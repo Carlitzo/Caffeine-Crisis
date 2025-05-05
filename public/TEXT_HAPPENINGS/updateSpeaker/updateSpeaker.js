@@ -4,6 +4,7 @@ export function updateSpeaker({speakerImg, character}) {
         const newId = `personSpeakingImg${character}`;
         if (speakerImg) {
             speakerImg.style.opacity = 0;
+            console.log(character)
             const newSrc = `./images/${character}.png`;
             
             speakerImg.src = newSrc;

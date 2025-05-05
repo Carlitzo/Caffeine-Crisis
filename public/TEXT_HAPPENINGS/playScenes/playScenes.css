@@ -34,11 +34,36 @@
   height: auto;
 }
 
+#personSpeakingImgGoran {
+  position: absolute;
+  top: 46vh;
+  left: 5vw;
+  max-width: 150vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+}
+
+#answerInputContainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(239, 232, 188);
+  padding: 30px;
+}
+
+#answerInputField {
+  height: 2rem;
+  width: 10rem;
+}
+
 #personSpeakingImgJohannes,
 #personSpeakingImgOlle,
 #personSpeakingImgMaria,
 #personSpeakingImgThomas,
-#personSpeakingImgGöran,
+#personSpeakingImgGoran,
 #personSpeakingImgAlbin {
   transition: top 0.5s ease, left 0.5s ease, opacity 0.3s ease;
 }

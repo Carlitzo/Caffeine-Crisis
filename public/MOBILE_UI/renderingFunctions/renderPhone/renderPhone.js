@@ -45,11 +45,11 @@ export function renderPhone(phoneIcon) {
 
     imageOfCallerElement.src = "./../MOBILE_UI/images/Kerstin.jpg";
     soundIcon.src = "./../MOBILE_UI/icons/PhoneIcons/volume.png";
-    facetimeIcon.src = "./../MOBILE_UI/icons/phoneIcons/facetime-button.png";
-    soundOffIcon.src = "./../MOBILE_UI/icons/phoneIcons/mute.png";
-    addUserIcon.src = "./../MOBILE_UI/icons/phoneIcons/add-friend.png";
-    endCallIcon.src = "./../MOBILE_UI/icons/phoneIcons/circle.png";
-    keypadIcon.src = "./../MOBILE_UI/icons/phoneIcons/dial.png";
+    facetimeIcon.src = "./../MOBILE_UI/icons/PhoneIcons/facetime-button.png";
+    soundOffIcon.src = "./../MOBILE_UI/icons/PhoneIcons/mute.png";
+    addUserIcon.src = "./../MOBILE_UI/icons/PhoneIcons/add-friend.png";
+    endCallIcon.src = "./../MOBILE_UI/icons/PhoneIcons/circle.png";
+    keypadIcon.src = "./../MOBILE_UI/icons/PhoneIcons/dial.png";
     audio.src = "./../MOBILE_UI/sounds/TelefonKerstinOlle.mp3";
 
     phoneDiv.appendChild(phoneWrapper);

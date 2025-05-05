@@ -93,18 +93,18 @@ function initLeafletMap() {
     userMarker.addTo(map);
 
     navigator.geolocation.watchPosition((position) => {
-        const lat = position.coords.latitude;
-        const lon = position.coords.longitude;
-        
-        userMarker.setLatLng([lat, lon]).bindPopup("Din GPS-location").openPopup();
-    },
-        (error) => {
-            console.log(`${error.message} no position available`);
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            
+            userMarker.setLatLng([lat, lon]).bindPopup("Din GPS-location").openPopup();
         },
-    {
-        enableHighAccuracy: true,
-        maximumAge: 30000,
-        timeout: 30000
-    }
+            (error) => {
+                console.log(`${error.message} no position available`);
+            },
+        {
+            enableHighAccuracy: true,
+            maximumAge: 30000,
+            timeout: 30000
+        }
     )
 }

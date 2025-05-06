@@ -69,7 +69,9 @@ export const dialogueData = {
     { character: "Goran", line: `Ja ja ja, : "Jag smyger in i kroppen och väcker cellerna. För mycket av mig kan få dig att darra som en zombie. Vad är jag?"` },
     { character: "Olle", line: "SVARET" },
     { character: "Goran", line: "Snyggt Olle! Nu har du förtjänat kaffemåttet, jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
-    { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." }
+    { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." },
+    { character: "Goran", line: "Men du, jag kom faktiskt på att jag har sett att det låg en kaffetratt borta vid agilitibana. Gå och kolla där så kanske du har en grej till på listan" },
+    { character: "Olle", line: "Är det sant? King är du Göran! Tack." },
   ],
   "6": [
     { character: "Olle", line: "Här, nu är jag här!" },

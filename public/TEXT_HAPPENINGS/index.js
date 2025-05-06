@@ -26,3 +26,4 @@ function setRealVh() {
 setRealVh();
 
 window.addEventListener('resize', setRealVh);
+window.addEventListener('load', setRealVh);

@@ -1,5 +1,5 @@
 :root {
-    --real-vh: 100vh; /* Fallback om JS inte hunnit köras */
+    --real-vh: 100vh;
 }
 
 #wrapper {

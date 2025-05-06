@@ -29,6 +29,7 @@ export function playScenes(sceneNumber, dialogueData) {
         }
         case 4:
         {
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/safespace_liten.jpg")`;
             break;
         }
         case 5:
@@ -43,6 +44,7 @@ export function playScenes(sceneNumber, dialogueData) {
         }
         case 7:
         {
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/sprinkler_liten.jpg")`;
             break;
         }
         

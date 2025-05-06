@@ -1,4 +1,9 @@
+:root {
+    --real-vh: 100vh; /* Fallback om JS inte hunnit köras */
+}
+
 #wrapper {
+    height: calc(var(--real-vh) * 100);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +30,7 @@
     height: 50px;
     width: 50px;
     position: absolute;
-    top: 90vh;
+    top: 90%;
     left: 80vw;
     border-radius: 10px;
 }

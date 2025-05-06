@@ -80,10 +80,10 @@ export const dialogueData = {
     { character: "Olle", line: "Japp, det löste sig till slut, fasen vad jag slitit." },
     { character: "Kerstin", line: "Så godt, jeg har kaffen her i båden, kom og hjælp mig." },
     { character: "Olle", line: "Ja, absolut. Jag är så glad över att du är här. En ängel är du!!!" },
-    { character: "Kerstin", line: "Jeg vil altid være her for dig, Olle, men nu må du skynde dig til Niagara og få styr på kaffen ved NIA0k82. Du vil møde en person dér – resten må du finde ud af selv." },
+    { character: "Kerstin", line: "Jeg vil altid være her for dig, Olle, men nu må du skynde dig til Niagara og få styr på kaffen ved NI:A0k82. Du vil møde en person dér – resten må du finde ud af selv." },
     { character: "Olle", line: "Jaja, jag springer nu, tack igen, älskar dig!" },
     { character: "Beskrivning", line: "Olle glömmer bort att han inte sagt 'älskar dig' tidigare men har inte tid att få ångest och springer i full fart tillbaka mot skolan." },
-    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø! Glem ikke: i Niagara NIA0k82" }
+    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø! Glem ikke: i Niagara NI:A0k82" }
   ],
   "7": [
     { character: "Olle", line: "Erik!!! Eller hur mår du? Mår du bra? Eller?" },

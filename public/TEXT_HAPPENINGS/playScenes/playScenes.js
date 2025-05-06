@@ -39,7 +39,7 @@ export function playScenes(sceneNumber, dialogueData) {
         }
         case 6:
         {
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/PNG_fyr.png")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/fyr.jpg")`;
             break;
         }
         case 7:

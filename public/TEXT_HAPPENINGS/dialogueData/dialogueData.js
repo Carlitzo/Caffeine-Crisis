@@ -84,5 +84,20 @@ export const dialogueData = {
     { character: "Olle", line: "Jaja, jag springer nu, tack igen, älskar dig!" },
     { character: "Beskrivning", line: "Olle glömmer bort att han inte sagt 'älskar dig' tidigare men har inte tid att få ångest och springer i full fart tillbaka mot skolan." },
     { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø!" }
+  ],
+  "7": [
+    { character: "Olle", line: "Erik!!! Eller hur mår du? Mår du bra? Eller?" },
+    { character: "Beskrivning", line: "Olle kollar granskande på Erik, är inte hans ögon också lite röda och tomma?" },
+    { character: "Erik", line: "Ja eller jag blev biten i armen nyss, vad fan är det som händer tror du? Varför är alla helt galna?" },
+    { character: "Beskrivning", line: "Åh vad skönt, Erik morrar inte och han beter sig nog rätt normalt." },
+    { character: "Olle", line: "Det är kaffet, eller ja, att det inte finns nåt kaffe!!! Det är som i Danmark, när ölen tog slut och det blev en öl-kris, abstinens du vet!" },
+    { character: "Erik", line: "Va? Okej? Så du menar att folk tappat det för att det inte finns nåt kaffe? Absurt. Men ja, det är klart, jag mår ju bra för jag dricker ju aldrig nåt kaffe ändå." },
+    { character: "Olle", line: "JA! Men jag har löst det! Jag har grejer att fixa kaffe med, jag har allting med mig!" },
+    { character: "Erik", line: "Jaha?? Men hur ska du få i dom här galningarna nåt utan att bli ihjälbiten? Alla kommer ju kasta sig på dig så snabbt de ser en kaffekopp!" },
+    { character: "Olle", line: "Men det måste ju finnas nåt sätt… Annars går ju allt åt helvete… hmmm typ genom sprinklersystemet kanske? Kan inte vi lösa det tror du?" },
+    { character: "Erik", line: "Jaa, visst, vi kan ju försöka men jag tror det är lite trasigt, det måste kopplas om lite. Men du är ju klipsk va?!" },
+    { character: "Olle", line: "Jag tror det, eller det måste vi ju lösa… Visa mig ritningen så ska jag kolla." },
+    { character: "Beskrivning", line: "Tillsammans kopplar de om sprinklersystemet så kaffet hittar rätt väg och kan sprinkla ut det eftertraktade kaffet i hela skolan." }
   ]
+  
 };

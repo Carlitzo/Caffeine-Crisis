@@ -117,6 +117,7 @@ export function playScenes(sceneNumber, dialogueData) {
                 if (event.key === "Enter") {
                     if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase() || inputField.value.trim().toLowerCase() === correctAnswerTwo.toLowerCase()) {
                         inputContainer.remove();
+                        riddleContainer.remove()
                         currentLine++;
                         showLine(currentLine);
                         arrowContainer.style.opacity = 1;

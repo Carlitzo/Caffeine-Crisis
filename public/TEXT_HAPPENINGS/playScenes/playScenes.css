@@ -58,6 +58,16 @@
   height: auto;
 }
 
+#personSpeakingImgKerstin {
+  position: absolute;
+  top: 54vh;
+  left: 23vw;
+  max-width: 100vw;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+}
+
 #answerInputContainer {
   margin: auto;
   display: flex;
@@ -78,6 +88,7 @@
 #personSpeakingImgMaria,
 #personSpeakingImgThomas,
 #personSpeakingImgGoran,
-#personSpeakingImgAlbin {
+#personSpeakingImgAlbin,
+#personSpeakingImgKerstin {
   transition: top 0.5s ease, left 0.5s ease, opacity 0.3s ease;
 }

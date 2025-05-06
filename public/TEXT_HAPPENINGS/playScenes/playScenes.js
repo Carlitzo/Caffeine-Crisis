@@ -108,7 +108,6 @@ export function playScenes(sceneNumber, dialogueData) {
                 if (event.key === "Enter") {
                     if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase() || inputField.value.trim().toLowerCase() === correctAnswerTwo.toLowerCase()) {
                         inputContainer.remove();
-                        window.scrollTo(0, 0);
                         currentLine++;
                         showLine(currentLine);
                     } else {
@@ -116,6 +115,9 @@ export function playScenes(sceneNumber, dialogueData) {
                         inputField.placeholder = "Fel svar, försök igen...";
                     }
                 }
+                // const vh = window.innerHeight * 0.01;
+                // let backgroundWrapper = document.getElementById("wrapper");
+                // backgroundWrapper.style.setProperty('height', '100vh');
             });
             return;
         }

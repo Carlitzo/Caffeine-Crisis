@@ -1,7 +1,3 @@
-:root {
-    --real-vh: 100vh;
-}
-
 #wrapper {
     height: calc(var(--real-vh) * 100);
     display: flex;

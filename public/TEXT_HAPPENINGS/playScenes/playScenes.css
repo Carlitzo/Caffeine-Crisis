@@ -11,7 +11,7 @@
 #personSpeakingImgOlle {
   position: absolute;
   top: 46vh;
-  left: -50vw;
+  left: -45vw;
   max-width: 150vw;
   max-height: 80vh;
   width: auto;
@@ -20,20 +20,20 @@
 
 #personSpeakingImgThomas {
   position: absolute;
-  top: 50vh;
-  left: 20vw;
-  max-width: 150vw;
-  max-height: 80vh;
+  top: 25vh;
+  left: 0vw;
+  max-width: 180vw;
+  max-height: 100vh;
   width: auto;
   height: auto;
 }
 
 #personSpeakingImgMaria {
   position: absolute;
-  top: 45vh;
-  left: 5vw;
-  max-width: 110vw;
-  max-height: 60vh;
+  top: 25vh;
+  left: 0vw;
+  max-width: 180vw;
+  max-height: 100vh;
   width: auto;
   height: auto;
 }

@@ -41,7 +41,7 @@ export const dialogueData = {
     { character: "Beskrivning", line: "Maria biter honom strax ovanför nyckelbenet och ryter som ett djur." },
     { character: "Maria", line: "RAAAWR!!!" },
     { character: "Olle", line: "Vad i hela friden..!!"},
-    { character: "Beskrivning", line: "Olle kan inte tro sina ögon.. vad händer?! han måste fly!! Han flyr till sitt safespace längst ner i trappuppgången i kaféet"}
+    { character: "Beskrivning", line: "Olle kan inte tro sina ögon.. vad händer?! han måste fly!! Han flyr till sitt safespace!!!"}
   ],
   "4": [
     { character: "Olle", line: "Okej, okej, andas. Ingen lärare i sikte." },

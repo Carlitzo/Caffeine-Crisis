@@ -71,9 +71,9 @@
 #personSpeakingImgErik {
   position: absolute;
   top: 45vh;
-  left: 30vw;
+  left: 29vw;
   max-width: 90vw;
-  max-height: 50vh;
+  max-height: 60vh;
   width: auto;
   height: auto;
 }

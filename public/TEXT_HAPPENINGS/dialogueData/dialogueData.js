@@ -47,11 +47,11 @@ export const dialogueData = {
     { character: "Olle", line: "Okej, okej, andas. Ingen lärare i sikte." },
     { character: "Beskrivning", line: "Olle andas ut och in och försöker hitta lugnet på sitt safe space." },
     { character: "Olle", line: "Vad i hela... VAD ÄR DET SOM HÄNDER???" },
-    { character: "Olle", line: "En sekund är jag på väg till Maria och nästa sekund försöker någon tugga på min axel?!? Det här är ju heeelt overkligt, ett stort jävla skämt måste det va. Vad händer?!" },
-    { character: "Olle", line: "Okej, tänk Olle, tänk. Du är smart, du löste ju Rubiks kub på två minuter – visserligen för att du trodde det var ett antagningskrav till nästa kurs, men ändå." },
+    { character: "Olle", line: "En sekund är jag på väg till Maria och nästa sekund försöker någon tugga på min axel?!? Det här är ju heeelt sjukt, det här måste vara ett stort jävla skämt. Vad är det som händer egentligen?!" },
+    { character: "Olle", line: "Okej, tänk Olle, tänk. Du är smart, du löste ju en Rubiks kub på bara två minuter – visserligen för att du trodde det var ett antagningskrav till nästa kurs, men ändå." },
     { character: "Beskrivning", line: "Olles smarta hjärna börjar gå på högvarv." },
-    { character: "Olle", line: "Juste, Thomas skrek ju på mig om att han ville ha kaffe och Maria blev ju helt galen borta i kafét…" },
-    { character: "Olle", line: "Alla lärare dricker kaffe. Mycket kaffe, hela tiden. Dom knarkar ju skiten typ. Om allt kaffe tagit slut samtidigt kanske de har fått… vad heter det… abstinens?" },
+    { character: "Olle", line: "Men vänta lite nu, Thomas skrek ju på mig om att han ville ha kaffe och Maria blev ju helt galen borta i kafét…" },
+    { character: "Olle", line: "Alla lärare dricker kaffe. Mycket kaffe, hela dagarna. Dom knarkar ju skiten typ. Om allt kaffe tagit slut samtidigt kanske de har fått… vad heter det… abstinens?" },
     { character: "Olle", line: "Kan det verkligen vara så att de blivit zombie-galna utan kaffe? Hjälp…" },
     { character: "Beskrivning", line: "Olle hör skrik på avstånd och ser elever springa ut från skolan." },
     { character: "Olle", line: "Jag behöver lösa detta, vem annars ska göra det… Men jag behöver en plan! Och hjälp. Kerstin. Jag måste ringa Kerstin. Hon kanske vet. Och hon lugnar mig alltid. Kerstin<3" }
@@ -72,7 +72,7 @@ export const dialogueData = {
     { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." }
   ],
   "6": [
-    { character: "Olle", line: "Här, här är jag!" },
+    { character: "Olle", line: "Här, nu är jag här!" },
     { character: "Beskrivning", line: "Olle flåsar jäkligt ansträngt." },
     { character: "Kerstin", line: "Gud, hvor lang tid det tog dig, Olle." },
     { character: "Olle", line: "Jag försökte faktiskt mitt bästa och snabbaste men det var fan många utmaningar att lösa. Men nu är jag här som tur!" },
@@ -80,9 +80,23 @@ export const dialogueData = {
     { character: "Olle", line: "Japp, det löste sig till slut, fasen vad jag slitit." },
     { character: "Kerstin", line: "Så godt, jeg har kaffen her i båden, kom og hjælp mig." },
     { character: "Olle", line: "Ja, absolut. Jag är så glad över att du är här. En ängel är du!!!" },
-    { character: "Kerstin", line: "Jeg vil altid hjælpe dig Olle, men nu må du skynde dig til Niagara og lave kaffe!" },
+    { character: "Kerstin", line: "Jeg vil altid være her for dig, Olle, men nu må du skynde dig til Niagara og få styr på kaffen ved NIA0k82. Du vil møde en person dér – resten må du finde ud af selv." },
     { character: "Olle", line: "Jaja, jag springer nu, tack igen, älskar dig!" },
     { character: "Beskrivning", line: "Olle glömmer bort att han inte sagt 'älskar dig' tidigare men har inte tid att få ångest och springer i full fart tillbaka mot skolan." },
-    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø!" }
+    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø! Glem ikke: i Niagara NIA0k82" }
+  ],
+  "7": [
+    { character: "Olle", line: "Erik!!! Eller hur mår du? Mår du bra? Eller?" },
+    { character: "Beskrivning", line: "Olle kollar granskande på Erik, är inte hans ögon också lite röda och tomma?" },
+    { character: "Erik", line: "Ja eller jag blev biten i armen nyss, vad fan är det som händer tror du? Varför är alla helt galna?" },
+    { character: "Beskrivning", line: "Åh vad skönt, Erik morrar inte och han beter sig nog rätt normalt" },
+    { character: "Olle", line: "Det är kaffet, eller ja, att det inte finns nåt kaffe!!! Det är som i Danmark, när ölen tog slut och det blev en öl-kris, abstinens du vet!" },
+    { character: "Erik", line: "Va? Okej? Så du menar att folk tappat det för att det inte finns nåt kaffe? Absurt. Men ja, det är klart, jag mår ju bra för jag dricker ju aldrig nåt kaffe ändå." },
+    { character: "Olle", line: "JA! Men jag har löst det! Jag har grejer att fixa kaffe med, jag har allting med mig!" },
+    { character: "Erik", line: "Jaha?? Men hur ska du få i dom här galningarna nåt utan att bli ihjälbiten? Alla kommer ju kasta sig på dig så snabbt de ser en kaffekopp!" },
+    { character: "Olle", line: "Men det måste ju finnas nåt sätt… Annars går ju allt åt helvete… hmmm typ genom sprinklersystemet kanske? Kan inte vi lösa det tror du?" },
+    { character: "Erik", line: "Jaa, visst, vi kan ju försöka men jag tror det är lite trasigt, det måste kopplas om lite. Men du är ju klipsk va?!" },
+    { character: "Olle", line: "Jag tror det, eller det måste vi ju lösa… Visa mig ritningen så ska jag kolla." },
+    { character: "Beskrivning", line: "Tillsammans kopplar de om sprinklersystemet så kaffet hittar rätt väg och kan sprinkla ut det eftertraktade kaffet i hela skolan" },
   ]
 };

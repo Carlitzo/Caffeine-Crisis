@@ -68,14 +68,35 @@
   height: auto;
 }
 
+#riddleContainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #846141;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30vh;
+  margin-bottom: 0;
+  max-width: 60vw;
+  color: white;
+}
+
 #answerInputContainer {
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   background-color: #846141;
   padding: 30px;
+  margin-top: 0;
+  width: 60vw;
+
 }
 
 #answerInputField {

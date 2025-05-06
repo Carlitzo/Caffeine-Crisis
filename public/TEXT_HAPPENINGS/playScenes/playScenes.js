@@ -89,6 +89,8 @@ export function playScenes(sceneNumber, dialogueData) {
         typeWriterEffect(line, textBubbleText);
 
         if (sceneNumber === 5 && index === 10) {
+            arrowContainer.style.opacity = 0;
+            
             const wrapper = document.getElementById("wrapper");
             const inputContainer = document.createElement("div");
             const inputField = document.createElement("input");
@@ -110,14 +112,12 @@ export function playScenes(sceneNumber, dialogueData) {
                         inputContainer.remove();
                         currentLine++;
                         showLine(currentLine);
+                        arrowContainer.style.opacity = 1;
                     } else {
                         inputField.value = "";
                         inputField.placeholder = "Fel svar, försök igen...";
                     }
                 }
-                // const vh = window.innerHeight * 0.01;
-                // let backgroundWrapper = document.getElementById("wrapper");
-                // backgroundWrapper.style.setProperty('height', '100vh');
             });
             return;
         }

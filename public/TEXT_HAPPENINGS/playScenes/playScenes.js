@@ -119,6 +119,12 @@ export function playScenes(sceneNumber, dialogueData) {
             });
             return;
         }
+
+        if (sceneNumber === 4 && index === 10) {
+            setTimeout(() => {
+                window.location.href = "/";
+            }, 12000)
+        }
     }
 
     // Sätt upp klick-event

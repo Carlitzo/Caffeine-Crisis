@@ -8,6 +8,7 @@ export function renderNews (newsIcon) {
     const returnContainer = document.createElement("div");
     const returnImg = document.createElement("img");
     const video = document.createElement("video");
+    const source = document.createElement("source");
 
     newsContainer.id = "newsContainer";
     newsImg.id = "newsImg";
@@ -16,7 +17,10 @@ export function renderNews (newsIcon) {
     returnImg.id = "returnImageArrow";
     returnImg.src = "./../MOBILE_UI/icons/arrow-notes.png";
     video.id = "videoSydsvenskan";
-    video.src = "./../videos/Sydsvenskan.mp4";
+    video.controls = true;
+    source.src = "./../MOBILE_UI/videos/Sydsvenskan.video.mp4"
+    source.type = "video/mp4";
+    video.appendChild(source);
 
     newsContainer.appendChild(newsImg);
     newsContainer.appendChild(returnContainer);

@@ -19,7 +19,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 700 },
+            gravity: { y: 850 },
             debug: false
         }
     },
@@ -47,6 +47,8 @@ function preload ()
 function create ()
 {
 
+    this.input.addPointer(2);
+
     background = this.add.image(this.scale.width / 2, this.scale.height, 'background');
     background.setDisplaySize(this.scale.width * 2, this.scale.height * 6);
 
@@ -55,8 +57,8 @@ function create ()
     pole = this.add.image(this.scale.width / 2, (this.scale.height * 3.425) - 2400 / 2, 'pole');
     pole.setDisplaySize(100, 2400);
     
-    const amountOfPlatforms = 12;
-    let heightMultiplier = 3.05;
+    const amountOfPlatforms = 10;
+    let heightMultiplier = 3.10;
 
     for (let i = 0; i < amountOfPlatforms; i++) {
         if (i === amountOfPlatforms - 1) {
@@ -70,11 +72,11 @@ function create ()
         }
 
         if (i === 2) {
-            heightMultiplier -= 0.15;
+            heightMultiplier -= 0.23;
         } else if (i === 5) {
             heightMultiplier -= 0.30;
         } else {
-            heightMultiplier -= 0.20;
+            heightMultiplier -= 0.25;
         }
     }
 
@@ -159,21 +161,20 @@ function update ()
     rightButton.setPosition(this.scale.width - 80, (this.scale.height - (this.scale.height * 0.06)) + this.cameras.main.scrollY);
     jumpButton.setPosition(this.scale.width / 2, (this.scale.height - (this.scale.height * 0.06)) + this.cameras.main.scrollY);
 
-    if (touchLeft)
-    {
-        player.setVelocityX(-300);
-        player.anims.play('left', true);
-    }
-    else if (touchRight)
-    {
-        player.setVelocityX(300);
-        player.anims.play('right', true);
-    }
-    else
-    {
+    if (this.input.pointer1.isDown || this.input.pointer2.isDown || this.input.pointer3.isDown || this.input.pointer4.isDown) {
+        if (touchLeft) {
+            player.setVelocityX(-300);
+            player.anims.play('left', true);
+        }
+        else if (touchRight) {
+            player.setVelocityX(300);
+            player.anims.play('right', true);
+        }
+    } else {
         player.setVelocityX(0);
         player.anims.play('turn', true);
     }
+
     if (player.body.onFloor())
     {
         jumpCounter = 0;

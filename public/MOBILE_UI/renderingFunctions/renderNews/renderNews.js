@@ -15,7 +15,7 @@ export function renderNews (newsIcon) {
     newsImg.src = "./../MOBILE_UI/images/Sydsvenskan.png"
     returnContainer.id = "returnContainer";
     returnImg.id = "returnImageArrow";
-    returnImg.src = "./../MOBILE_UI/icons/arrow-notes.png";
+    returnImg.src = "./../MOBILE_UI/icons/arrow-red.png";
     video.id = "videoSydsvenskan";
     video.controls = true;
     source.src = "./../MOBILE_UI/videos/Sydsvenskan.video.mp4"

@@ -4,7 +4,6 @@ export function updateSpeaker({speakerImg, character}) {
     if (currentSpeaker === character) {
         return;
     }
-    // Vänta innan du byter bild och ID
     setTimeout(() => {
         const newId = `personSpeakingImg${character}`;
         

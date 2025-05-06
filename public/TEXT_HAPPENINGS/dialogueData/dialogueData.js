@@ -99,4 +99,5 @@ export const dialogueData = {
     { character: "Olle", line: "Jag tror det, eller det måste vi ju lösa… Visa mig ritningen så ska jag kolla." },
     { character: "Beskrivning", line: "Tillsammans kopplar de om sprinklersystemet så kaffet hittar rätt väg och kan sprinkla ut det eftertraktade kaffet i hela skolan" },
   ]
+  
 };

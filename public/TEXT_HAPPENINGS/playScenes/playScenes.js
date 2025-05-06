@@ -94,13 +94,20 @@ export function playScenes(sceneNumber, dialogueData) {
             const wrapper = document.getElementById("wrapper");
             const inputContainer = document.createElement("div");
             const inputField = document.createElement("input");
+            const riddleContainer = document.createElement("div");
+            const riddleText = document.createElement("p");
 
             inputContainer.id = "answerInputContainer";
             inputField.id = "answerInputField";
+            riddleContainer.id = "riddleContainer";
+            riddleText.id = "riddleText";
             inputField.type = "text";
             inputField.placeholder = "skriv ditt svar här...";
+            riddleText.textContent = "Jag smyger in i kroppen och väcker cellerna. För mycket av mig kan få dig att darra som en zombie. Vad är jag?";
 
+            wrapper.appendChild(riddleContainer);
             wrapper.appendChild(inputContainer);
+            riddleContainer.appendChild(riddleText);
             inputContainer.appendChild(inputField);
 
             let correctAnswer = "kaffe";

@@ -126,7 +126,7 @@ export function renderHomepage() {
         "facetime.svg", "calender.svg", "mail.svg", "clock.svg", 
         "photo-album.svg", "weather.svg", "calculator.svg", 
         "app-store.svg", "settings.svg", "tiktok.svg", 
-        "safari.svg"
+        "safari.svg", "camera.svg", "aftonbladet.png", "messages.svg"
     ];
 
     // ⚙️ Lägg till eventlisteners

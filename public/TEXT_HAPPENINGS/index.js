@@ -17,14 +17,3 @@ if (sceneParam === 1) {
 } else {
   console.warn("Ingen scene GET-param hittades.");
 }
-
-// function setRealVh() {
-//   const vh = window.innerHeight * 0.01;
-//   let backgroundWrapper = document.getElementById("wrapper");
-//   backgroundWrapper.style.setProperty('--real-vh', `${vh}px`);
-// }
-
-// setRealVh();
-
-// window.addEventListener('resize', setRealVh);
-// window.addEventListener('load', setRealVh);

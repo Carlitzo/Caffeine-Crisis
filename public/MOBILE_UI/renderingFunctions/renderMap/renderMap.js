@@ -96,7 +96,7 @@ function initLeafletMap() {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
             
-            userMarker.setLatLng([lat, lon]).bindPopup("Din GPS-location").openPopup();
+            userMarker.setLatLng([lat, lon]).bindPopup("Din GPS-location")
         },
             (error) => {
                 console.log(`${error.message} no position available`);

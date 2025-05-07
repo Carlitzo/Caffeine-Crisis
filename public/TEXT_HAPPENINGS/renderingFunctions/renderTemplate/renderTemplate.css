@@ -8,7 +8,7 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow:-moz-hidden-unscrollable;
 }
 
 #textBubble {

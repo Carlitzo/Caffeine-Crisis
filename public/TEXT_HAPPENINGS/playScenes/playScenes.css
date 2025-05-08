@@ -1,6 +1,6 @@
 #personSpeakingImgJohannes {
   position: absolute;
-  top: 20vh;
+  top: 30vh;
   left: 0vw;
   max-width: 180vw;
   max-height: 100vh;
@@ -9,9 +9,9 @@
 }
 
 #personSpeakingImgOlle {
-  position: absolute;
-  top: 46vh;
-  left: -50vw;
+  position: relative;
+  top: 36vh;
+  left: -30vw;
   max-width: 150vw;
   max-height: 80vh;
   width: auto;
@@ -19,9 +19,9 @@
 }
 
 #personSpeakingImgThomas {
-  position: absolute;
-  top: 25vh;
-  left: -10vw;
+  position: relative;
+  top: -15vh;
+  left: 10vw;
   max-width: 180vw;
   max-height: 100vh;
   width: auto;
@@ -30,8 +30,8 @@
 
 #personSpeakingImgMaria {
   position: absolute;
-  top: 25vh;
-  left: 0vw;
+  top: 15vh;
+  left: 20vw;
   max-width: 180vw;
   max-height: 100vh;
   width: auto;
@@ -40,8 +40,8 @@
 
 #personSpeakingImgAlbin {
   position: absolute;
-  top: 45vh;
-  left: -5vw;
+  top: 35vh;
+  left: 15vw;
   max-width: 110vw;
   max-height: 60vh;
   width: auto;
@@ -50,8 +50,8 @@
 
 #personSpeakingImgGoran {
   position: absolute;
-  top: 46vh;
-  left: 3vw;
+  top: 36vh;
+  left: 23vw;
   max-width: 110vw;
   max-height: 60vh;
   width: auto;
@@ -60,8 +60,8 @@
 
 #personSpeakingImgKerstin {
   position: absolute;
-  top: 45vh;
-  left: 30vw;
+  top: 35vh;
+  left: 50vw;
   max-width: 90vw;
   max-height: 50vh;
   width: auto;
@@ -70,8 +70,8 @@
 
 #personSpeakingImgErik {
   position: absolute;
-  top: 45vh;
-  left: 29vw;
+  top: 35vh;
+  left: 20vw;
   max-width: 90vw;
   max-height: 60vh;
   width: auto;
@@ -112,6 +112,11 @@
 #answerInputField {
   height: 2rem;
   width: 10rem;
+}
+
+#personSpeakingWrapper {
+  position: relative;
+  overflow-y: clip;
 }
 
 #personSpeakingImgJohannes,

@@ -17,8 +17,8 @@ export function renderTemplate() {
     arrowImg.src = "./icons/arrow.svg";
 
     document.body.appendChild(wrapper); 
-    wrapper.appendChild(personSpeakingWrapper);
     wrapper.appendChild(textBubble);
+    wrapper.appendChild(personSpeakingWrapper);
     wrapper.appendChild(arrowContainer);
     personSpeakingWrapper.appendChild(personSpeakingImg);
     textBubble.appendChild(textBubbleText);

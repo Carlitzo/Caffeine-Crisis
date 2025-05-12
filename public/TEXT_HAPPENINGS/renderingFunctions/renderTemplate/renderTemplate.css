@@ -27,7 +27,7 @@
     height: 10vh;
 }
 
-#arrowContainer {
+#arrowRightContainer {
     background-color: white;
     height: 50px;
     width: 50px;
@@ -35,4 +35,15 @@
     top: 80%;
     left: 80vw;
     border-radius: 10px;
+}
+
+#arrowLeftContainer {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 80%;
+    left: 8vw;
+    border-radius: 10px;
+    transform: rotate(180deg);
 }

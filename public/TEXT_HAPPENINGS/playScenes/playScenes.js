@@ -54,20 +54,28 @@ export function playScenes(sceneNumber, dialogueData) {
         let i = 0;
         element.textContent = "";
         isTyping = true;
-        arrowContainer.style.pointerEvents = "none"; // blockera klick under skrivning
-
+        arrowContainer.style.pointerEvents = "none";
+    
+        const bubble = element.parentElement;
+        bubble.style.height = "auto"; // För att rutan ska börja från minsta storlek
+    
         function type() {
             if (i < text.length) {
                 element.textContent += text.charAt(i);
                 i++;
+                
+                // Beräkna höjden dynamiskt baserat på textinnehåll
+                const scrollHeight = element.scrollHeight + 30; // 30 för lite extra space
+                bubble.style.height = `${scrollHeight}px`;
+    
                 setTimeout(type, speed);
             } else {
                 isTyping = false;
-                arrowContainer.style.pointerEvents = "auto"; // tillåt klick
+                arrowContainer.style.pointerEvents = "auto";
                 if (onComplete) onComplete();
             }
         }
-
+    
         type();
     }
 

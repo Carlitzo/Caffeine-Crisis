@@ -67,7 +67,7 @@ export const dialogueData = {
     { character: "Goran", line: "Nehee du! Stopp min kropp. Den får du inte så lätt. Först måste du svara på en gåta och när du har löst den så kan du få måttet, ha ha ha." },
     { character: "Olle", line: "Jahapp okej då men det behöver gå snabbt, jag har inte all tid i världen idag." },
     { character: "Goran", line: `Ja ja ja, : "Jag smyger in i kroppen och väcker cellerna. För mycket av mig kan få dig att darra som en zombie. Vad är jag?"` },
-    { character: "Olle", line: "SVARET" },
+    { character: "Olle", line: "Här får du gåtan igen ifall du glömde bort den och behöver fundera lite till." },
     { character: "Goran", line: "Snyggt Olle! Nu har du förtjänat kaffemåttet, jag hoppas du löser kaffekrisen innan jag måste steppa in och rädda Malmö, he he." },
     { character: "Olle", line: "Ja det hoppas jag med, annars är vi rökta." },
     { character: "Goran", line: "Men du, jag kom faktiskt på att jag har sett att det låg en kaffetratt borta vid agilitibana. Gå och kolla där så kanske du har en grej till på listan" },

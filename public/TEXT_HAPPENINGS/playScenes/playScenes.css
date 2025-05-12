@@ -93,6 +93,8 @@
   margin-bottom: 0;
   max-width: 60vw;
   color: white;
+  position: fixed;
+  top: 5px;
 }
 
 #answerInputContainer {
@@ -106,8 +108,7 @@
   padding: 30px;
   margin-top: 0;
   width: 60vw;
-  position: absolute;
-  top: 30px;
+  position: fixed;
 }
 
 #answerInputField {

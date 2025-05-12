@@ -1,5 +1,6 @@
 import { openAppFunction } from "./../../appFunctions/openAppFunction.js";
 import { closeAppFunction } from "./../../appFunctions/closeAppFunction.js";
+import { getPlayerState } from "../../appFunctions/gameState.js";
 
 export function renderMap(mapIcon) {
     const mapDiv = document.createElement("div");
@@ -15,6 +16,10 @@ export function renderMap(mapIcon) {
 
     mapReturnButton.addEventListener("click", () => {
         closeAppFunction(mapDiv, mapIcon);
+        if (mapWatchId !== null) {
+            navigator.geolocation.clearWatch(mapWatchId);
+            mapWatchId = null;
+        }
     })
 
     setTimeout(() => {
@@ -22,15 +27,18 @@ export function renderMap(mapIcon) {
     }, 50);
 }
 
+let mapWatchId = null;
+
 function initLeafletMap() {
+
     // Skapa en Leaflet-karta
     const map = L.map('map', { zoomControl: false, touchZoom: true, scrollWheelZoom: false, doubleClickZoom: true, boxZoom: false}).setView([55.6077, 12.9960], 15); // Västra Hamnens koordinater
-
+    
     // Lägg till OpenStreetMap baslager
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
+    
     // Exempel på hur du kan lägga till en anpassad markör
     const fyrIcon = L.icon({
         iconUrl: './../MOBILE_UI/images/kartikoner/Fyren.png', // Ersätt med din egen markörbild
@@ -80,8 +88,13 @@ function initLeafletMap() {
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
-
-    L.marker([55.6125, 12.9958], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
+    let currentLocationState = getPlayerState().visitedLocations;
+    let amountVisited = Object.values(currentLocationState).filter(Boolean).length;
+    
+    if (amountVisited === 4) {
+        L.marker([55.6125, 12.9958], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
+    }
+    
     L.marker([55.6144, 12.9797], { icon: varvsparkenIcon }).addTo(map).bindPopup('Varvsparken');
     L.marker([55.6068, 12.9749], { icon: agilitybananIcon }).addTo(map).bindPopup('Agilitybanan');
     L.marker([55.6118, 12.9804], { icon: icaMaxiIcon }).addTo(map).bindPopup('Ica-Maxi-Göran');
@@ -92,7 +105,7 @@ function initLeafletMap() {
     const userMarker = L.marker([0, 0]);
     userMarker.addTo(map);
 
-    navigator.geolocation.watchPosition((position) => {
+    mapWatchId = navigator.geolocation.watchPosition((position) => {
             const lat = position.coords.latitude;
             const lon = position.coords.longitude;
             

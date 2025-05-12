@@ -130,6 +130,48 @@ export function playScenes(sceneNumber, dialogueData) {
             return;
         }
 
+        if (sceneNumber === 7 && index === 11) {
+            arrowContainer.style.opacity = 0;
+            
+            const wrapper = document.getElementById("wrapper");
+            const inputContainer = document.createElement("div");
+            const inputField = document.createElement("input");
+            const riddleContainer = document.createElement("div");
+            const riddleText = document.createElement("p");
+
+            inputContainer.id = "answerInputContainer";
+            inputField.id = "answerInputField";
+            riddleContainer.id = "riddleContainer";
+            riddleText.id = "riddleText";
+            inputField.type = "text";
+            inputField.placeholder = "skriv ditt svar här...";
+            riddleText.textContent = "Skriv koden nedan!";
+
+            wrapper.appendChild(riddleContainer);
+            wrapper.appendChild(inputContainer);
+            riddleContainer.appendChild(riddleText);
+            inputContainer.appendChild(inputField);
+
+            let correctAnswer = "OR628";
+            
+            inputField.addEventListener("keydown", (event) => {
+                if (event.key === "Enter") {
+                    if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase() || inputField.value.trim().toLowerCase() === correctAnswerTwo.toLowerCase()) {
+                        inputContainer.remove();
+                        riddleContainer.remove()
+                        currentLine++;
+                        showLine(currentLine);
+                        arrowContainer.style.opacity = 1;
+                        localStorage.clear();
+                    } else {
+                        inputField.value = "";
+                        inputField.placeholder = "Fel svar, försök igen...";
+                    }
+                }
+            });
+            return;
+        }
+
         if (sceneNumber === 4 && index === 10) {
             setTimeout(() => {
                 window.location.href = "/";

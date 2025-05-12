@@ -29,7 +29,7 @@
 }
 
 #personSpeakingImgMaria {
-  position: absolute;
+  position: relative;
   top: 15vh;
   left: 20vw;
   max-width: 180vw;
@@ -39,9 +39,9 @@
 }
 
 #personSpeakingImgAlbin {
-  position: absolute;
-  top: 35vh;
-  left: 15vw;
+  position: fixed;
+  top: 50vh;
+  left: 30vw;
   max-width: 110vw;
   max-height: 60vh;
   width: auto;
@@ -49,8 +49,8 @@
 }
 
 #personSpeakingImgGoran {
-  position: absolute;
-  top: 36vh;
+  position: fixed;
+  top: 45vh;
   left: 23vw;
   max-width: 110vw;
   max-height: 60vh;
@@ -59,9 +59,9 @@
 }
 
 #personSpeakingImgKerstin {
-  position: absolute;
-  top: 35vh;
-  left: 50vw;
+  position: fixed;
+  top: 45vh;
+  left: 33vw;
   max-width: 90vw;
   max-height: 50vh;
   width: auto;
@@ -69,9 +69,9 @@
 }
 
 #personSpeakingImgErik {
-  position: absolute;
-  top: 35vh;
-  left: 20vw;
+  position: fixed;
+  top: 43vh;
+  left: 30vw;
   max-width: 90vw;
   max-height: 60vh;
   width: auto;
@@ -106,7 +106,8 @@
   padding: 30px;
   margin-top: 0;
   width: 60vw;
-
+  position: absolute;
+  top: 30px;
 }
 
 #answerInputField {

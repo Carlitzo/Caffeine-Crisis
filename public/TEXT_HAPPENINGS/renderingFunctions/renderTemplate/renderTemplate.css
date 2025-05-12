@@ -9,11 +9,12 @@
     background-size: cover;
     background-position: center;
     overflow: hidden; 
+    position: relative;
 }
 
 #textBubble {
-    position: relative;
-    top: 35vh;
+    position: absolute;
+    top: 14vh;
     background-color: white;
     width: 80%;
     max-width: 300px;
@@ -31,7 +32,7 @@
     height: 50px;
     width: 50px;
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 80vw;
     border-radius: 10px;
 }

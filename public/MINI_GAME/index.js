@@ -41,7 +41,7 @@ function preload ()
     this.load.image('buttonLeft', 'assets/buttonLeft.png');
     this.load.image('buttonRight', 'assets/buttonRight.png');
     this.load.image('star', 'assets/star.png');
-    this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 });
+    this.load.spritesheet('dude', 'assets/olle.png', { frameWidth: 58, frameHeight: 48 });
 }
 
 function create ()
@@ -87,7 +87,7 @@ function create ()
     player = this.physics.add.sprite(this.scale.width/2, this.scale.height - 100, 'dude');
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
-    player.setScale(1.3);
+    player.setScale(1.1);
     
     this.physics.add.overlap(player, star, collectStar, null, this);
     this.physics.add.collider(player, platforms);
@@ -95,20 +95,20 @@ function create ()
 
     this.anims.create({
         key: 'left',
-        frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3}),
+        frames: this.anims.generateFrameNumbers('dude', { start: 2, end: 3 }),
         frameRate: 10,
         repeat: -1
     });
-
+    
     this.anims.create({
         key: 'turn',
         frames: [ { key: 'dude', frame: 4 } ],
         frameRate: 20
     });
-
+    
     this.anims.create({
         key: 'right',
-        frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
+        frames: this.anims.generateFrameNumbers('dude', { start: 2, end: 3 }),
         frameRate: 10,
         repeat: -1
     });

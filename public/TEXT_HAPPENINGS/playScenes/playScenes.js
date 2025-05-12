@@ -55,19 +55,27 @@ export function playScenes(sceneNumber, dialogueData) {
         element.textContent = "";
         isTyping = true;
         arrowRightContainer.style.pointerEvents = "none"; // blockera klick under skrivning
-
+    
+        const bubble = element.parentElement;
+        bubble.style.height = "auto"; // För att rutan ska börja från minsta storlek
+    
         function type() {
             if (i < text.length) {
                 element.textContent += text.charAt(i);
                 i++;
+                
+                // Beräkna höjden dynamiskt baserat på textinnehåll
+                const scrollHeight = element.scrollHeight + 30; // 30 för lite extra space
+                bubble.style.height = `${scrollHeight}px`;
+    
                 setTimeout(type, speed);
             } else {
                 isTyping = false;
-                arrowRightContainer.style.pointerEvents = "auto"; // tillåt klick
+                arrowContainer.style.pointerEvents = "auto";
                 if (onComplete) onComplete();
             }
         }
-
+    
         type();
     }
 

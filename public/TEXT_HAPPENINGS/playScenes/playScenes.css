@@ -10,7 +10,7 @@
 
 #personSpeakingImgOlle {
   position: relative;
-  top: 36vh;
+  top: 45vh;
   left: -30vw;
   max-width: 150vw;
   max-height: 80vh;
@@ -20,7 +20,7 @@
 
 #personSpeakingImgThomas {
   position: relative;
-  top: -15vh;
+  top: 25vh;
   left: 10vw;
   max-width: 180vw;
   max-height: 100vh;

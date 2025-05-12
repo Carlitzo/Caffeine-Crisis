@@ -8,17 +8,22 @@
     width: 100vw;
     background-size: cover;
     background-position: center;
-    overflow: none; 
+    overflow: hidden; 
 }
 
 #textBubble {
+    position: relative;
+    top: 35vh;
     background-color: white;
-    height: auto;
     width: 80%;
     max-width: 300px;
     border-radius: 20px;
     padding: 5%;
-    margin-top: 160%;
+    /* margin-top: 160%; */
+}
+
+#textBubbleText {
+    height: 10vh;
 }
 
 #arrowContainer {

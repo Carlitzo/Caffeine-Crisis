@@ -71,7 +71,7 @@ export function playScenes(sceneNumber, dialogueData) {
                 setTimeout(type, speed);
             } else {
                 isTyping = false;
-                arrowContainer.style.pointerEvents = "auto";
+                arrowRightContainer.style.pointerEvents = "auto";
                 if (onComplete) onComplete();
             }
         }

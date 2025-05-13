@@ -32,7 +32,7 @@ export function renderNotes(notesIcon) {
 
     const tasks = getPlayerState().tasks;
     const taskKeys = Object.keys(tasks);
-    const tasksDescriptions = ["Hämta kaffefilter från Orkanenbiblioteket vid anslagstavlan", "Prata med Ica-Maxi-Göran om andra kaffeföremål", "Gå till varvsparken och hämta en glaskupol från en av lyktstolparna", "Gå till agilitybanan och leta efter en tratt att brygga kaffe med", "Ta emot kaffebönor av Kerstin efter att alla andra uppdrag är avklarade"];
+    const tasksDescriptions = ["Fixa ett kaffefilter i Orkanenbiblioteket vid anslagstavlan.", "Träffa Ica-Maxi-Göran och fråga om kaffeföremål.", "Hitta en hundtratt vid hundrastgården i Varvsparken.", "Skruva av glaskupan på en lyktstolpe i Skateparken i Stapelbäddsparken.", "Möta Kerstin och ta emot kaffebönor efter att alla föremål är samlade."];
     const tasksContainer = document.createElement("div");
     tasksContainer.id = "tasksContainer";
 

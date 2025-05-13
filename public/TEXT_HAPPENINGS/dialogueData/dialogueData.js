@@ -41,7 +41,7 @@ export const dialogueData = {
     { character: "Beskrivning", line: "Maria biter honom strax ovanför nyckelbenet och ryter som ett djur." },
     { character: "Maria", line: "RAAAWR!!!" },
     { character: "Olle", line: "Vad i hela friden..!!"},
-    { character: "Beskrivning", line: "Olle kan inte tro sina ögon.. vad händer?! han måste fly!! Han flyr till sitt safespace!!!"}
+    { character: "Beskrivning", line: "Olle kan inte tro sina ögon.. vad händer?! han måste fly!! Han flyr till sitt safespace (bänken som tittar ut mot Beijers bro) !!!"}
   ],
   "4": [
     { character: "Olle", line: "Okej, okej, andas. Ingen lärare i sikte." },
@@ -85,7 +85,7 @@ export const dialogueData = {
     { character: "Kerstin", line: "Jeg vil altid være her for dig, Olle, men nu må du skynde dig til Niagara og få styr på kaffen ved NI:A0k82. Du vil møde en person dér – resten må du finde ud af selv." },
     { character: "Olle", line: "Jaja, jag springer nu, tack igen, älskar dig!" },
     { character: "Beskrivning", line: "Olle glömmer bort att han inte sagt 'älskar dig' tidigare men har inte tid att få ångest och springer i full fart tillbaka mot skolan." },
-    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø! Glem ikke: i Niagara NI:A0k82" }
+    { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø! Glem ikke: vid Niagara NI:C0E11" }
   ],
   "7": [
     { character: "Olle", line: "Erik!!! Eller hur mår du? Mår du bra? Eller?" },
@@ -101,5 +101,4 @@ export const dialogueData = {
     { character: "Olle", line: "Jag tror det, eller det måste vi ju lösa… Visa mig ritningen så ska jag kolla." },
     { character: "Beskrivning", line: "Tillsammans kopplar de om sprinklersystemet så kaffet hittar rätt väg och kan sprinkla ut det eftertraktade kaffet i hela skolan" },
   ]
-  
 };

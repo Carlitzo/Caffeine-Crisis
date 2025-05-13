@@ -191,7 +191,7 @@ function collectStar(player, star) {
     const winText = scene.add.text(
         centerX,
         centerY -50,
-        '🎉 Grattis! Du plockade ner glaskulan!',
+        '🎉 Grattis! Du plockade ner glaskupolen!',
         {
             fontSize: `${Math.floor(scene.scale.width / 15)}px`, // Dynamisk storlek baserat på skärm
             fill: '#ffffff',

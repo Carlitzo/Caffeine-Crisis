@@ -25,7 +25,7 @@
     height: auto;
     line-height: 1.4;
     box-sizing: border-box;
-    transition: height 0.1s ease; /* Smidigare transition när den växer */
+    transition: height 0.1s ease;
 }
 
 #textBubbleText {

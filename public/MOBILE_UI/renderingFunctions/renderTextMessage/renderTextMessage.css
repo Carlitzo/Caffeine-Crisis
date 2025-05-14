@@ -23,7 +23,7 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
     display: flex;
     align-items: flex-start;
-    width: 280px;
+    width: 80%;
 }
 
 #smsPopup.show {

@@ -28,10 +28,10 @@ export function initPlayerState() {
                 kaffeBonor: false
             },
             visitedLocations: {
-                orkanen: false,
-                ica_maxi: false,
-                varvsparken: false,
-                trattplatsen: false
+                orkanen: true,
+                ica_maxi: true,
+                varvsparken: true,
+                trattplatsen: true
             }
         };
         localStorage.setItem(playerStateKey, JSON.stringify(initialState));

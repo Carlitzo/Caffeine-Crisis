@@ -1,6 +1,7 @@
 import { openAppFunction } from "./../../appFunctions/openAppFunction.js";
 import { closeAppFunction } from "./../../appFunctions/closeAppFunction.js";
 import { getPlayerState } from "../../appFunctions/gameState.js";
+import { renderTextMessage } from "../renderTextMessage/renderTextMessage.js";
 
 export function renderMap(mapIcon) {
     const mapDiv = document.createElement("div");
@@ -93,10 +94,13 @@ function initLeafletMap() {
     
     if (amountVisited === 4) {
         L.marker([55.6125, 12.9958], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
+        const message = "Bra jobbat fin-olle <3 NUU kan du möta mig vid inre fyr!!!";
+        renderTextMessage(message);
+        console.log("hej");
     }
     
-    L.marker([55.6144, 12.9797], { icon: varvsparkenIcon }).addTo(map).bindPopup('Varvsparken');
-    L.marker([55.6068, 12.9749], { icon: agilitybananIcon }).addTo(map).bindPopup('Agilitybanan');
+    L.marker([55.6133, 12.9842], { icon: varvsparkenIcon }).addTo(map).bindPopup('Stapelbäddsparken');
+    L.marker([55.6149, 12.9784], { icon: agilitybananIcon }).addTo(map).bindPopup('Varvsparken');
     L.marker([55.6118, 12.9804], { icon: icaMaxiIcon }).addTo(map).bindPopup('Ica-Maxi-Göran');
     L.marker([55.6108, 12.9951], { icon: orkanenIcon }).addTo(map).bindPopup('Orkanenbiblioteket');
     L.marker([55.6101, 12.9933], { icon: safeSpaceIcon }).addTo(map).bindPopup('Safespace <3');

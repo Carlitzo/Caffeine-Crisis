@@ -21,14 +21,14 @@ export function initBackgroundLocationTracking() {
                 updateVisitedLocation("ica_maxi", true);
             }
 
-            // Varvsparken
-            if (isCloseTo(latitude, longitude, 55.6144, 12.9797) < 100) {
-                console.log("visited a spot", "varvsparken");
+            // Stapelbäddsparken
+            if (isCloseTo(latitude, longitude, 55.6129, 12.9845) < 100) {
+                console.log("visited a spot", "stapelbäddsparken");
                 updateVisitedLocation("varvsparken", true);
             }
 
-            // Agilitybanan
-            if (isCloseTo(latitude, longitude, 55.6068, 12.9749) < 100) {
+            // Hundrastgården
+            if (isCloseTo(latitude, longitude, 55.6149, 12.9784) < 100) {
                 console.log("visited a spot", "trattplatsen");
                 updateVisitedLocation("trattplatsen", true);
             }

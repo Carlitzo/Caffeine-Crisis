@@ -1,0 +1,57 @@
+#messageContainer {
+    position: relative;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#smsPopup {
+    position: fixed;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 16px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+    font-size: 15px;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#smsPopup.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+#smsPopup h4 {
+    margin: 0 0 6px 0;
+    font-size: 13px;
+}
+
+#smsPopup p {
+    margin-top: 1vh !important;
+    margin: 0;
+    font-size: 15px;
+}
+
+#kerstinImgMessage {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+#textIconPopUp {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 8vh;
+    left: 16vw;
+}

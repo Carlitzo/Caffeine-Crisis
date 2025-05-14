@@ -77,6 +77,48 @@ export function playScenes(sceneNumber, dialogueData) {
 
         typeWriterEffect(line, textBubbleText);
 
+        if (sceneNumber === 5 && index === 10) {
+            arrowRightContainer.style.opacity = 0;
+            
+            const wrapper = document.getElementById("wrapper");
+            const inputContainer = document.createElement("div");
+            const inputField = document.createElement("input");
+            const riddleContainer = document.createElement("div");
+            const riddleText = document.createElement("p");
+    
+            inputContainer.id = "answerInputContainer";
+            inputField.id = "answerInputField";
+            riddleContainer.id = "riddleContainer";
+            riddleText.id = "riddleText";
+            inputField.type = "text";
+            inputField.placeholder = "skriv ditt svar här...";
+            riddleText.textContent = "Jag smyger in i kroppen och väcker cellerna. För mycket av mig kan få dig att darra som en zombie. Vad är jag?";
+    
+            wrapper.appendChild(riddleContainer);
+            wrapper.appendChild(inputContainer);
+            riddleContainer.appendChild(riddleText);
+            inputContainer.appendChild(inputField);
+    
+            let correctAnswer = "kaffe";
+            let correctAnswerTwo = "koffein";
+    
+            inputField.addEventListener("keydown", (event) => {
+                if (event.key === "Enter") {
+                    if (inputField.value.trim().toLowerCase() === correctAnswer.toLowerCase() || inputField.value.trim().toLowerCase() === correctAnswerTwo.toLowerCase()) {
+                        inputContainer.remove();
+                        riddleContainer.remove();
+                        currentLine++;
+                        showLine(currentLine);
+                        arrowRightContainer.style.opacity = 1;
+                    } else {
+                        inputField.value = "";
+                        inputField.placeholder = "Fel svar, försök igen...";
+                    }
+                }
+            });
+            return;
+        }
+
         if (sceneNumber === 7 && index === 11) {
             arrowRightContainer.style.opacity = 0;
 

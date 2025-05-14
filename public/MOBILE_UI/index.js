@@ -2,7 +2,7 @@ import { renderHomepage } from "./renderingFunctions/renderhomePage/renderHomepa
 import { setAppEvents } from "./setAppEvents/setAppEvents.js";
 import { getOrCreatePlayerId, initPlayerState } from "./appFunctions/gameState.js";
 import { initBackgroundLocationTracking } from "./appFunctions/initBackgroundTracking.js";
-localStorage.clear();
+
 renderHomepage();
 setAppEvents();
 initPlayerState();

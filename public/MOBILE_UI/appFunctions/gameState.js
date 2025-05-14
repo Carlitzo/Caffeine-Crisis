@@ -28,11 +28,12 @@ export function initPlayerState() {
                 kaffeBonor: false
             },
             visitedLocations: {
-                orkanen: true,
-                ica_maxi: true,
-                varvsparken: true,
-                trattplatsen: true
-            }
+                orkanen: false,
+                ica_maxi: false,
+                varvsparken: false,
+                trattplatsen: false
+            },
+            textMessageShown: false
         };
         localStorage.setItem(playerStateKey, JSON.stringify(initialState));
     }
@@ -71,5 +72,14 @@ export function updateVisitedLocation(locationKey, value) {
     }
 
     state.visitedLocations[locationKey] = value;
+    localStorage.setItem(playerStateKey, JSON.stringify(state));
+}
+
+export function updateMessageShown () {
+    const id = getOrCreatePlayerId();
+    const playerStateKey = `playerState_${id}`;
+    const state = getPlayerState();
+
+    state.textMessageShown = true;
     localStorage.setItem(playerStateKey, JSON.stringify(state));
 }

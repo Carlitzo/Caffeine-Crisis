@@ -2,6 +2,7 @@ import { openAppFunction } from "./../../appFunctions/openAppFunction.js";
 import { closeAppFunction } from "./../../appFunctions/closeAppFunction.js";
 import { getPlayerState } from "../../appFunctions/gameState.js";
 import { renderTextMessage } from "../renderTextMessage/renderTextMessage.js";
+import { updateMessageShown } from "../../appFunctions/gameState.js";
 
 export function renderMap(mapIcon) {
     const mapDiv = document.createElement("div");
@@ -90,13 +91,14 @@ function initLeafletMap() {
         popupAnchor: [0, -32]
     });
     let currentLocationState = getPlayerState().visitedLocations;
+    let textMessageShown = getPlayerState().textMessageShown;
     let amountVisited = Object.values(currentLocationState).filter(Boolean).length;
     
-    if (amountVisited === 4) {
-        L.marker([55.6125, 12.9958], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
-        const message = "Bra jobbat fin-olle <3 NUU kan du möta mig vid inre fyr!!!";
-        renderTextMessage(message);
-        console.log("hej");
+    if (amountVisited === 4 && !textMessageShown) {
+            L.marker([55.6125, 12.9958], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
+            const message = "Bra jobbat fin-olle <3 NUU kan du möta mig vid inre fyr!!!";
+            renderTextMessage(message);
+            updateMessageShown();
     }
     
     L.marker([55.6133, 12.9842], { icon: varvsparkenIcon }).addTo(map).bindPopup('Stapelbäddsparken');

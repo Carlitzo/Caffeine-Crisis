@@ -50,7 +50,7 @@ export function renderPhone(phoneIcon) {
     addUserIcon.src = "./../MOBILE_UI/icons/PhoneIcons/add-friend.png";
     endCallIcon.src = "./../MOBILE_UI/icons/PhoneIcons/circle.png";
     keypadIcon.src = "./../MOBILE_UI/icons/PhoneIcons/dial.png";
-    audio.src = "./../MOBILE_UI/sounds/TelefonKerstinOlle.mp3";
+    audio.src = "./../MOBILE_UI/sounds/KerstinOlleMobile.mp3";
 
     phoneDiv.appendChild(phoneWrapper);
     phoneDiv.appendChild(audio);

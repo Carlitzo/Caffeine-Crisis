@@ -99,9 +99,10 @@ export function playScenes(sceneNumber, dialogueData) {
             riddleContainer.appendChild(riddleText);
             inputContainer.appendChild(inputField);
 
-            const correctAnswer = "OR628";
+            const correctAnswer = "CA56IN3Z";
 
             inputField.addEventListener("keydown", (event) => {
+                console.log(inputField.value)
                 if (event.key === "Enter") {
                     if (inputField.value.trim().toUpperCase() === correctAnswer) {
                         inputContainer.remove();
@@ -168,18 +169,15 @@ function showEpilog() {
         easing: "linear"
     });
 
-    // Skapa bilden men gör den osynlig
     const endingImage = document.createElement("div");
     endingImage.id = "endingImage";
     document.body.appendChild(endingImage);
 
-    // Starta fade-in 5 sekunder innan epilogen är slut
     setTimeout(() => {
         endingImage.classList.add("fade-in");
-    }, 42000); // 42000 ms = 42 sekunder in i animationen (5 sekunder kvar)
+    }, 42000);
 
-    // När allt är klart, pausa ljudet och ta bort texten
     setTimeout(() => {
         epilogText.style.display = "none";
-    }, 47000); // Epilogen slutar efter 47 sekunder
+    }, 47000);
 }

@@ -64,11 +64,12 @@
 
 #epilogText {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     max-width: 80%;
     margin: 20px;
     text-align: center;
     overflow-y: auto;
+    font-family: "Poppins-LightItalic";
 }
 
 #endingImage {
@@ -84,7 +85,6 @@
     opacity: 0;
 }
 
-/* Animation för fade-in */
 .fade-in {
     animation: fadeInAnimation 5s forwards;
 }

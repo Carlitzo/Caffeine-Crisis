@@ -7,7 +7,6 @@ export function initBackgroundLocationTracking() {
     backgroundWatchId = navigator.geolocation.watchPosition(
         (position) => {
             const { latitude, longitude } = position.coords;
-            console.log("checked coords");
 
             // Orkanen
             if (isCloseTo(latitude, longitude, 55.6108, 12.9951) < 100) {

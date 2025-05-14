@@ -141,7 +141,7 @@ export function playScenes(sceneNumber, dialogueData) {
             riddleContainer.appendChild(riddleText);
             inputContainer.appendChild(inputField);
 
-            const correctAnswer = "OR628";
+            const correctAnswer = "CA56IN3Z";
 
             inputField.addEventListener("keydown", (event) => {
                 if (event.key === "Enter") {

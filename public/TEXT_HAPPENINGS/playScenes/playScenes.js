@@ -31,7 +31,7 @@ export function playScenes(sceneNumber, dialogueData) {
             backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/fyr.jpg")`;
             break;
         case 7:
-            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/sprinkler_liten.jpg")`;
+            backgroundImage.style.backgroundImage = `url("./../TEXT_HAPPENINGS/images/sprinkler_location.jpg")`;
             break;
     }
 

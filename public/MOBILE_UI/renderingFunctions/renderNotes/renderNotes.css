@@ -59,7 +59,6 @@ font-weight: bold;
 input {
     width: 20px;
     height: 20px;
-    appearance: none;
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -69,6 +68,7 @@ input {
     border: 1px solid black;
     -webkit-appearance: none;
     -moz-appearance: none;
+    flex-shrink: 0;
 }
 
 input[type="checkbox"]:checked {

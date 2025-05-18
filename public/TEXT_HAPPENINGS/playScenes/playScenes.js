@@ -69,9 +69,9 @@ export function playScenes(sceneNumber, dialogueData) {
             arrowLeftContainer.style.pointerEvents = "auto";
         }
 
-        if (index >= scene.length) {
+        if (index === scene.length - 1) {
+            arrowRightContainer.style.opacity = 0;
             arrowRightContainer.style.pointerEvents = "none";
-            return;
         }
 
         const { character, line } = scene[index];
@@ -174,10 +174,15 @@ export function playScenes(sceneNumber, dialogueData) {
         }
 
         if (sceneNumber === 4 && index === 10 || sceneNumber === 5 && index === 14 || sceneNumber === 6 && index === 11) {
-            setTimeout(() => {
+            const phoneButton = document.createElement("button");
+            phoneButton.id = "phoneButton";
+            phoneButton.textContent = "Öppna Olles telefon";
+            wrapper.appendChild(phoneButton);
+            phoneButton.addEventListener("click", () => {
                 window.location.href = "/";
-            }, 12000);
+            })
         }
+
     }
 
     arrowRightContainer.addEventListener("click", () => {

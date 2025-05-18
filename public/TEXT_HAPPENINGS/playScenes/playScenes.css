@@ -98,7 +98,7 @@
   width: 60vh;
 }
 
-#answerInputContainer {
+#answerInputContainer, #phoneButton {
   margin: auto;
   display: flex;
   align-items: center;

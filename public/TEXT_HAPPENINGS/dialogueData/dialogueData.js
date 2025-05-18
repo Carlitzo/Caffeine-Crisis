@@ -82,7 +82,7 @@ export const dialogueData = {
     { character: "Olle", line: "Japp, det löste sig till slut, fasen vad jag slitit." },
     { character: "Kerstin", line: "Så godt, jeg har kaffen her i båden, kom og hjælp mig." },
     { character: "Olle", line: "Ja, absolut. Jag är så glad över att du är här. En ängel är du!!!" },
-    { character: "Kerstin", line: "Jeg vil altid være her for dig, Olle, men nu må du skynde dig til Niagara og få styr på kaffen ved NI:A0k82. Du vil møde en person dér – resten må du finde ud af selv." },
+    { character: "Kerstin", line: "Jeg vil altid være her for dig, Olle, men nu må du skynde dig til Niagara og få styr på kaffen ved NI:C0E11. Du vil møde en person dér – resten må du finde ud af selv." },
     { character: "Olle", line: "Jaja, jag springer nu, tack igen, älskar dig!" },
     { character: "Beskrivning", line: "Olle glömmer bort att han inte sagt 'älskar dig' tidigare men har inte tid att få ångest och springer i full fart tillbaka mot skolan." },
     { character: "Kerstin", line: "Hahaha vi ses senere, når du har reddet Malmø! Glem ikke: vid Niagara NI:C0E11" }
@@ -99,6 +99,6 @@ export const dialogueData = {
     { character: "Olle", line: "Men det måste ju finnas nåt sätt… Annars går ju allt åt helvete… hmmm typ genom sprinklersystemet kanske? Kan inte vi lösa det tror du?" },
     { character: "Erik", line: "Jaa, visst, vi kan ju försöka men jag tror det är lite trasigt, det måste kopplas om lite. Men du är ju klipsk va?!" },
     { character: "Olle", line: "Jag tror det, eller det måste vi ju lösa… Visa mig ritningen så ska jag kolla." },
-    { character: "Beskrivning", line: "Tillsammans kopplar de om sprinklersystemet så kaffet hittar rätt väg och kan sprinkla ut det eftertraktade kaffet i hela skolan" },
+    { character: "Beskrivning", line: "Erik står ivrigt och tittar på när Olle kopplar ihop sprinklersystemet" },
   ]
 };

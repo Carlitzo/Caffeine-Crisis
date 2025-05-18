@@ -22,7 +22,7 @@ export function initBackgroundLocationTracking() {
 
             // Stapelbäddsparken
             if (isCloseTo(latitude, longitude, 55.6130, 12.9850) < 100) {
-                console.log("visited a spot", "stapelbäddsparken");
+                console.log("visited a spot", "stapelbaddsparken");
                 updateVisitedLocation("stapelbaddsparken", true);
             }
 

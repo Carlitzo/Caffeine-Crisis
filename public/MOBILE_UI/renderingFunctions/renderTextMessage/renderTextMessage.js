@@ -25,5 +25,5 @@ export function renderTextMessage(message) {
     setTimeout(() => {
         popup.classList.remove("show");
         setTimeout(() => {popup.remove()}, 300);
-    }, 5000)
+    }, 7000)
 }

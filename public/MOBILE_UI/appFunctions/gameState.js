@@ -28,10 +28,10 @@ export function initPlayerState() {
                 kaffeBonor: false
             },
             visitedLocations: {
-                orkanen: false,
-                ica_maxi: false,
-                stapelbaddsparken: false,
-                trattplatsen: false
+                orkanen: true,
+                ica_maxi: true,
+                stapelbaddsparken: true,
+                trattplatsen: true
             },
             textMessageShown: false
         };

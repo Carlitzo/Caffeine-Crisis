@@ -148,3 +148,7 @@
   border-radius: 8px;
   object-fit: contain;
 }
+
+#notesIcon {
+  cursor:pointer;
+}

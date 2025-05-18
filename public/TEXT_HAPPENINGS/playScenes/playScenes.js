@@ -61,6 +61,14 @@ export function playScenes(sceneNumber, dialogueData) {
     }
 
     function showLine(index) {
+        if (index === 0) {
+            arrowLeftContainer.style.opacity = 0;
+            arrowLeftContainer.style.pointerEvents = "none";
+        } else {
+            arrowLeftContainer.style.opacity = 1;
+            arrowLeftContainer.style.pointerEvents = "auto";
+        }
+
         if (index >= scene.length) {
             arrowRightContainer.style.pointerEvents = "none";
             return;
@@ -70,6 +78,10 @@ export function playScenes(sceneNumber, dialogueData) {
 
         if (character === "Beskrivning") {
             textBubbleText.style.fontStyle = "italic";
+            if (scene[index - 1] && scene[index - 1].character !== "Beskrivning") {
+                const previousCharacter = scene[index - 1].character;
+                updateSpeaker({ speakerImg: speakerImg, character: previousCharacter });
+            }
         } else {
             textBubbleText.style.fontStyle = "normal";
             updateSpeaker({ speakerImg: speakerImg, character: character });

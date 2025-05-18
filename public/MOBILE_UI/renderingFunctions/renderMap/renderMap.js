@@ -104,7 +104,7 @@ function initLeafletMap() {
             }
     }
     
-    L.marker([55.6133, 12.9842], { icon: stapelbaddsparkenIcon }).addTo(map).bindPopup('Stapelbäddsparken');
+    L.marker([55.6130, 12.9850], { icon: stapelbaddsparkenIcon }).addTo(map).bindPopup('Stapelbäddsparken');
     L.marker([55.6149, 12.9784], { icon: varvsparkenIcon }).addTo(map).bindPopup('Varvsparken');
     L.marker([55.6118, 12.9804], { icon: icaMaxiIcon }).addTo(map).bindPopup('Ica-Maxi-Göran');
     L.marker([55.6108, 12.9951], { icon: orkanenIcon }).addTo(map).bindPopup('Orkanenbiblioteket');

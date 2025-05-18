@@ -21,9 +21,9 @@ export function initBackgroundLocationTracking() {
             }
 
             // Stapelbäddsparken
-            if (isCloseTo(latitude, longitude, 55.6129, 12.9845) < 100) {
+            if (isCloseTo(latitude, longitude, 55.6130, 12.9850) < 100) {
                 console.log("visited a spot", "stapelbäddsparken");
-                updateVisitedLocation("varvsparken", true);
+                updateVisitedLocation("stapelbaddsparken", true);
             }
 
             // Hundrastgården

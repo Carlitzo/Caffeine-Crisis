@@ -30,7 +30,7 @@ export function initPlayerState() {
             visitedLocations: {
                 orkanen: false,
                 ica_maxi: false,
-                varvsparken: false,
+                stapelbaddsparken: false,
                 trattplatsen: false
             },
             textMessageShown: false

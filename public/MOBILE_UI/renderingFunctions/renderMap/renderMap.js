@@ -49,14 +49,14 @@ function initLeafletMap() {
         popupAnchor: [0, -32] // Var popupen ska öppnas relativt markören
     });
     
-    const varvsparkenIcon = L.icon({
+    const stapelbaddsparkenIcon = L.icon({
         iconUrl: './../MOBILE_UI/images/kartikoner/Varvsparken.png',
         iconSize: [70, 70],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32]
     });
 
-    const agilitybananIcon = L.icon({
+    const varvsparkenIcon = L.icon({
         iconUrl: './../MOBILE_UI/images/kartikoner/Tratt.png',
         iconSize: [70, 70],
         iconAnchor: [16, 32],
@@ -95,14 +95,14 @@ function initLeafletMap() {
     let amountVisited = Object.values(currentLocationState).filter(Boolean).length;
     
     if (amountVisited === 4 && !textMessageShown) {
-            L.marker([55.6125, 12.9958], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
+            L.marker([55.6125, 12.9945], { icon: fyrIcon }).addTo(map).bindPopup('Malmö Inre Fyr');
             const message = "Bra jobbat fin-olle <3 NUU kan du möta mig vid inre fyr!!!";
             renderTextMessage(message);
             updateMessageShown();
     }
     
-    L.marker([55.6133, 12.9842], { icon: varvsparkenIcon }).addTo(map).bindPopup('Stapelbäddsparken');
-    L.marker([55.6149, 12.9784], { icon: agilitybananIcon }).addTo(map).bindPopup('Varvsparken');
+    L.marker([55.6133, 12.9842], { icon: stapelbaddsparkenIcon }).addTo(map).bindPopup('Stapelbäddsparken');
+    L.marker([55.6149, 12.9784], { icon: varvsparkenIcon }).addTo(map).bindPopup('Varvsparken');
     L.marker([55.6118, 12.9804], { icon: icaMaxiIcon }).addTo(map).bindPopup('Ica-Maxi-Göran');
     L.marker([55.6108, 12.9951], { icon: orkanenIcon }).addTo(map).bindPopup('Orkanenbiblioteket');
     L.marker([55.6101, 12.9933], { icon: safeSpaceIcon }).addTo(map).bindPopup('Safespace <3');

@@ -40,7 +40,7 @@ export function renderPhone(phoneIcon) {
     endCallIcon.classList.add("phoneSelectionIcon");
     keypadIcon.classList.add("phoneSelectionIcon");
 
-    timerElement.textContent = "00:10";
+    timerElement.textContent = "00:00"; // Startar från 0
     nameElement.textContent = "Kerstin ❤️";
 
     imageOfCallerElement.src = "./../MOBILE_UI/images/Kerstin.jpg";
@@ -87,15 +87,38 @@ export function renderPhone(phoneIcon) {
 
     openAppFunction(phoneIcon, phoneDiv);
 
-    audio.play().catch((error) => {
+    // === Enkel timerfunktion ===
+    let timerInterval;
+    let elapsedSeconds = 0;
+    const maxDuration = 106; // 1 minut och 46 sekunder
+
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+        const secs = (seconds % 60).toString().padStart(2, '0');
+        return `${mins}:${secs}`;
+    }
+
+    function startSimpleTimer() {
+        timerElement.textContent = formatTime(elapsedSeconds);
+        timerInterval = setInterval(() => {
+            elapsedSeconds++;
+            timerElement.textContent = formatTime(elapsedSeconds);
+            if (elapsedSeconds >= maxDuration) {
+                clearInterval(timerInterval);
+            }
+        }, 1000);
+    }
+
+    audio.play().then(() => {
+        startSimpleTimer();
+    }).catch((error) => {
         console.error("Autoplay misslyckades", error);
     });
 
     endCallIcon.addEventListener("click", () => {
-        // Stoppa och återställ ljudet
         audio.pause();
         audio.currentTime = 0;
-
+        clearInterval(timerInterval);
         setTimeout(() => {
             closeAppFunction(phoneDiv, phoneIcon);
         }, 30);

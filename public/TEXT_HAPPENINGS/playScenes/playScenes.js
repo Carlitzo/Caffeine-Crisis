@@ -172,6 +172,12 @@ export function playScenes(sceneNumber, dialogueData) {
             });
             return;
         }
+
+        if (sceneNumber === 4 && index === 10 || sceneNumber === 5 && index === 14 || sceneNumber === 6 && index === 11) {
+            setTimeout(() => {
+                window.location.href = "/";
+            }, 12000);
+        }
     }
 
     arrowRightContainer.addEventListener("click", () => {

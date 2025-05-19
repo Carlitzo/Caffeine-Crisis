@@ -118,7 +118,7 @@
 }
 
 #personSpeakingWrapper {
-  /* position: relative; */
+  position: relative;
   overflow-y: clip;
   height: 100dvh;
 }

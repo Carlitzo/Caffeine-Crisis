@@ -120,6 +120,7 @@
 #personSpeakingWrapper {
   position: relative;
   overflow-y: clip;
+  height: 100dvh;
 }
 
 #personSpeakingImgJohannes,

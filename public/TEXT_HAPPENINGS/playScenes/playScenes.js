@@ -1,5 +1,13 @@
 import { updateSpeaker } from "./../updateSpeaker/updateSpeaker.js";
 
+function setViewportHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+setViewportHeight();
+window.addEventListener('resize', setViewportHeight);
+
 export function playScenes(sceneNumber, dialogueData) {
     const scene = dialogueData[sceneNumber.toString()];
     const textBubbleText = document.getElementById("textBubbleText");

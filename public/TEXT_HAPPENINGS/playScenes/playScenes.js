@@ -3,12 +3,12 @@ import { updateSpeaker } from "./../updateSpeaker/updateSpeaker.js";
 function setViewportHeight() {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
-setViewportHeight();
-window.addEventListener('resize', setViewportHeight);
+}
 
 export function playScenes(sceneNumber, dialogueData) {
+    setViewportHeight();
+    window.addEventListener('resize', setViewportHeight);
+
     const scene = dialogueData[sceneNumber.toString()];
     const textBubbleText = document.getElementById("textBubbleText");
     const speakerImg = document.getElementById("personSpeakingImg");
